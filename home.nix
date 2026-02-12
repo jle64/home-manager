@@ -123,6 +123,8 @@ in {
 
     packages = with pkgs; [
       age
+      bat
+      borgbackup
       direnv
       doggo
       eza
@@ -134,6 +136,8 @@ in {
       pandoc
       pwgen
       ripgrep
+      rclone
+      rsync
       shellcheck
       skim
       starship

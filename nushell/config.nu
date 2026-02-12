@@ -67,11 +67,6 @@ $env.config = {
         }
     }
 
-    filesize: {
-        metric: true
-        format: "auto"
-    }
-
     float_precision: 2
     buffer_editor: ""
     use_ansi_coloring: true

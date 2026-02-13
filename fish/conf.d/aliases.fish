@@ -8,12 +8,8 @@ if [ "(uname)" = "Linux" ];
 	alias ip='ip -c'
 end
 alias g='grep -Ei'
-if which eza >/dev/null;
-    alias ls='eza --group-directories-first --hyperlink --group --git --time-style long-iso'
-    alias tree='ls --tree -A'
-else if [ "(uname)" = "Linux" ];
-    alias ls='ls --color=auto --group-directories-first --hyperlink=auto'
-end
+alias ls='eza --group-directories-first --hyperlink --group --git --time-style long-iso'
+alias tree='ls --tree -A'
 alias l='ls'
 alias l.='ls -ld .*'
 alias lc='ls -1'

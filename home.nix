@@ -130,6 +130,7 @@ in {
       eza
       fd
       fish
+      fzf
       jq
       ncdu
       nushell

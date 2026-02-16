@@ -183,8 +183,7 @@ in {
   programs = {
     home-manager.enable = true;
     zoxide.enable = true;
-    #   bash.enable = true;
-    #  fish.enable = true;
+    fish.enable = true;
     neovim = {
       enable = true;
       viAlias = true;

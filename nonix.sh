@@ -29,7 +29,6 @@ done
 
 CONFIG_DIRS=(
   fish
-  git
   kitty
   nushell
   nvim

@@ -9,7 +9,7 @@ if [ "(uname)" = "Linux" ];
 end
 alias g='grep -Ei'
 alias ls='eza --group-directories-first --hyperlink --group --git --time-style long-iso'
-alias tree='ls --tree -A'
+alias tree='ls --tree -A --git-ignore'
 alias l='ls'
 alias l.='ls -ld .*'
 alias lc='ls -1'

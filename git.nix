@@ -102,6 +102,7 @@
 
     diff = {
       algorithm = "histogram";
+      external = "difft";
     };
 
     "url \"git@github.com:\"" = {

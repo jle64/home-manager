@@ -121,21 +121,38 @@ in {
 
     packages = with pkgs; [
       age
+      aria2
       bat
       borgbackup
+      curl
+      devbox
+      difftastic
       direnv
       doggo
+      dool
+      duf
       eza
       fd
       fish
+      fishPlugins.bass
+      fishPlugins.fzf-fish
+      fishPlugins.z
       fzf
+      gron
+      jj
       jq
+      just
+      lftp
+      lnav
       ncdu
+      nmap
       nushell
       pandoc
+      progress
+      pv
       pwgen
-      ripgrep
       rclone
+      ripgrep
       rsync
       shellcheck
       skim
@@ -144,8 +161,10 @@ in {
       tig
       trash-cli
       ugrep
+      vimPlugins.vim-plug
       xh
       yq
+      yt-dlp
       zellij
       zoxide
     ];

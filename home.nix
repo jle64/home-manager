@@ -18,7 +18,6 @@
     ".bash_logout" = "bash/bash_logout";
     ".bash_profile" = "bash/bash_profile";
     ".bashrc" = "bash/bashrc";
-    ".config/starship.toml" = "starship/starship.toml";
     ".dircolors" = "coreutils/dircolors";
     ".inputrc" = "readline/inputrc";
     ".profile" = "sh/profile";
@@ -32,7 +31,6 @@
 
   configDirs = [
     "fish"
-    "git"
     "kitty"
     "nushell"
     "nvim"
@@ -166,11 +164,15 @@ in {
   programs = {
     home-manager.enable = true;
     zoxide.enable = true;
+    #   bash.enable = true;
+    #  fish.enable = true;
     neovim = {
       enable = true;
       viAlias = true;
       vimAlias = true;
       vimdiffAlias = true;
     };
+    starship = import ./starship.nix;
+    git = import ./git.nix;
   };
 }

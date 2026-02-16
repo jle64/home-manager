@@ -6,10 +6,10 @@
   ];
 
   settings = {
-    user.name = "Jonathan Lestrelin";
-    user.email = "jonathan@lestrel.in";
-    signing = {
-      key = "~/.ssh/id_ed25519.pub";
+    user = {
+      name = "Jonathan Lestrelin";
+      email = "jonathan@lestrel.in";
+      signingKey = "~/.ssh/id_ed25519.pub";
       signByDefault = true;
     };
 
@@ -30,94 +30,93 @@
       lr = "log --reverse";
     };
 
-    extraConfig = {
-      core = {
-        whitespace = "fix,trailing-space,tabwidth=4";
-      };
+    core = {
+      whitespace = "fix,trailing-space,tabwidth=4";
+    };
 
-      merge = {
-        tool = "vimdiff";
-        conflictstyle = "zdiff3";
-      };
+    merge = {
+      tool = "vimdiff";
+      conflictstyle = "zdiff3";
+    };
 
-      log = {
-        date = "rfc2822";
-      };
+    log = {
+      date = "rfc2822";
+    };
 
-      color = {
-        diff = "auto";
-        status = "auto";
-        branch = "auto";
-        interactive = "auto";
-        ui = "auto";
-        pager = true;
-      };
+    color = {
+      diff = "auto";
+      status = "auto";
+      branch = "auto";
+      interactive = "auto";
+      ui = "auto";
+      pager = true;
+    };
 
-      "color \"diff\"" = {
-        meta = "cyan";
-        frag = "yellow";
-        old = "red";
-        new = "green";
-      };
+    "color \"diff\"" = {
+      meta = "cyan";
+      frag = "yellow";
+      old = "red";
+      new = "green";
+    };
 
-      "color \"status\"" = {
-        added = "cyan";
-        changed = "green";
-        untracked = "magenta";
-      };
+    "color \"status\"" = {
+      added = "cyan";
+      changed = "green";
+      untracked = "magenta";
+    };
 
-      push = {
-        default = "simple";
-        followtags = true;
-        autoSetupRemote = true;
-      };
+    push = {
+      default = "simple";
+      followtags = true;
+      autoSetupRemote = true;
+    };
 
-      gui = {
-        warndetachedcommit = true;
-        spellingdictionary = "en";
-      };
+    gui = {
+      warndetachedcommit = true;
+      spellingdictionary = "en";
+    };
 
-      pull = {
-        rebase = false;
-      };
+    pull = {
+      rebase = false;
+    };
 
-      init = {
-        defaultBranch = "main";
-      };
+    init = {
+      defaultBranch = "main";
+    };
 
-      credential = {
-        helper = "/usr/libexec/git-core/git-credential-libsecret";
-      };
+    credential = {
+      helper = "/usr/libexec/git-core/git-credential-libsecret";
+    };
 
-      commit = {
-        gpgsign = true;
-      };
+    commit = {
+      gpgsign = true;
+    };
 
-      gpg = {
-        format = "ssh";
-      };
+    gpg = {
+      format = "ssh";
+    };
 
-      help = {
-        autocorrect = "prompt";
-      };
+    help = {
+      autocorrect = "prompt";
+    };
 
-      diff = {
-        algorithm = "histogram";
-      };
-      "url \"git@github.com:\"" = {
-        insteadOf = [
-          "github:"
-          "gh:"
-          "https://github.com/"
-        ];
-      };
+    diff = {
+      algorithm = "histogram";
+    };
 
-      "url \"git@gitlab.com:\"" = {
-        insteadOf = [
-          "gitlab:"
-          "gl:"
-        ];
-      };
+    "url \"git@github.com:\"" = {
+      insteadOf = [
+        "github:"
+        "gh:"
+        "https://github.com/"
+      ];
+    };
+
+    "url \"git@gitlab.com:\"" = {
+      insteadOf = [
+        "gitlab:"
+        "gl:"
+      ];
     };
   };
 }

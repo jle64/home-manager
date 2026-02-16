@@ -165,6 +165,7 @@ in {
 
   programs = {
     home-manager.enable = true;
+    zoxide.enable = true;
     neovim = {
       enable = true;
       viAlias = true;

@@ -104,6 +104,20 @@
       diff = {
         algorithm = "histogram";
       };
+      "url \"git@github.com:\"" = {
+        insteadOf = [
+          "github:"
+          "gh:"
+          "https://github.com/"
+        ];
+      };
+
+      "url \"git@gitlab.com:\"" = {
+        insteadOf = [
+          "gitlab:"
+          "gl:"
+        ];
+      };
     };
   };
 }

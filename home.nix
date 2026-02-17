@@ -54,70 +54,11 @@
       recursive = true;
     };
   };
-
-  customKeys = [
-    {
-      id = "custom0";
-      binding = "<Super>n";
-      command = "nautilus";
-      name = "Nautilus";
-    }
-    {
-      id = "custom1";
-      binding = "<Super>t";
-      command = "flatpak run org.mozilla.Thunderbird";
-      name = "Thunderbird";
-    }
-    {
-      id = "custom2";
-      binding = "<Super>l";
-      command = "flatpak run io.gitlab.librewolf-community";
-      name = "LibreWolf";
-    }
-    {
-      id = "custom3";
-      binding = "<Super>c";
-      command = "ptyxis --new-window";
-      name = "Console";
-    }
-    {
-      id = "custom5";
-      binding = "<Primary>Escape";
-      command = "gnome-system-monitor";
-      name = "System monitor";
-    }
-    {
-      id = "custom6";
-      binding = "<Super>e";
-      command = "flatpak run org.gnome.TextEditor";
-      name = "Editor";
-    }
-    {
-      id = "custom7";
-      binding = "<Super>d";
-      command = "bash -c 'gio open https://duckduckgo.com/\"$(wl-paste -p)\"''";
-      name = "Duckduckgo";
-    }
-  ];
-
-  keyPaths = map (k: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/${k.id}/") customKeys;
-
-  keyAttrs = lib.listToAttrs (
-    map (k: {
-      name = "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/${k.id}";
-      value = {
-        binding = k.binding;
-        command = k.command;
-        name = k.name;
-      };
-    })
-    customKeys
-  );
 in {
   home = {
     username = "jonathan";
-    homeDirectory = "/var/home/jonathan";
     stateVersion = "25.11";
+    homeDirectory = "/var/home/jonathan";
 
     packages = with pkgs; [
       age
@@ -170,15 +111,8 @@ in {
     ];
 
     file = fileAttrs // dirAttrs // profileDirAttr;
-
-    sessionVariables = {EDITOR = "neovim";};
+    sessionVariables = {EDITOR = "nvim";};
   };
-
-  dconf.settings =
-    keyAttrs
-    // {
-      "org/gnome/settings-daemon/plugins/media-keys" = {custom-keybindings = keyPaths;};
-    };
 
   programs = {
     home-manager.enable = true;
@@ -193,4 +127,8 @@ in {
     starship = import ./starship.nix;
     git = import ./git.nix;
   };
+
+  imports = [
+    ./dconf.nix
+  ];
 }

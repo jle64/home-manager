@@ -39,18 +39,6 @@ vim.opt.listchars = {
 -- Toggle invisible characters display with <leader>l
 vim.keymap.set("n", "<leader>l", ":set list!<CR>", { silent = true })
 
--- Restore last cursor position on file open
-vim.api.nvim_create_autocmd("BufReadPost", {
-  pattern = "*",
-  callback = function()
-    local mark = vim.api.nvim_buf_get_mark(0, '"')
-    local lcount = vim.api.nvim_buf_line_count(0)
-    if mark[1] > 0 and mark[1] <= lcount then
-      vim.api.nvim_win_set_cursor(0, mark)
-    end
-  end,
-})
-
 -- Quick file switching
 vim.keymap.set("n", "<Tab>", ":e#<CR>", { silent = true })
 
@@ -76,37 +64,9 @@ Plug 'rktjmp/lush.nvim'
 Plug 'm00qek/baleia.nvim', { 'tag': 'v1.3.0' }
 call plug#end()
 ]])
--- vim.cmd("colorscheme base16-atelier-forest-light")
 vim.cmd("colorscheme rosebones")
 
 -- Airline configuration
 vim.opt.laststatus = 2
 vim.g.airline_powerline_fonts = 1
 vim.g.airline_extensions_tabline_enabled = 1
-
--- PagerMode function
-vim.api.nvim_create_user_command("PagerMode", function()
-  vim.opt.modifiable = true
-  vim.opt.confirm = false
-  vim.opt.number = false
-  vim.opt.filetype = "man"
-  vim.opt.list = false
-  vim.opt.showtabline = 0
-  vim.opt.foldcolumn = "0"
-
-  -- Colorize buffer using ANSI characters
-  local baleia = require("baleia").setup({})
-  baleia.once(vim.api.nvim_get_current_buf())
-  baleia.automatically(vim.api.nvim_get_current_buf())
-
-  -- Remove trailing spaces
-  vim.cmd([[%s/\s\+$//e]])
-  vim.fn.setreg("/", "")
-
-  -- Enable relative line numbers
-  vim.opt.relativenumber = true
-
-  -- Map 'q' to force quit
-  vim.keymap.set("n", "q", ":q!<CR>", { buffer = true, silent = true })
-end, {})
-

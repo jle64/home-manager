@@ -77,6 +77,7 @@ in {
       fd
       fish
       fishPlugins.bass
+      fishPlugins.fish-you-should-use
       fishPlugins.fzf-fish
       fishPlugins.z
       fzf

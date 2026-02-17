@@ -65,6 +65,7 @@ in {
       aria2
       bat
       borgbackup
+      comma
       curl
       devbox
       difftastic

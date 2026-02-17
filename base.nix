@@ -7,9 +7,9 @@
   profile.d = pkgs.symlinkJoin {
     name = "profile.d";
     paths = [
-      ../config/sh/profile.d
-      ../config/bash/profile.d
-      ../config/zsh/profile.d
+      config/sh/profile.d
+      config/bash/profile.d
+      config/zsh/profile.d
     ];
   };
 
@@ -27,7 +27,7 @@
   };
 
   fileAttrs =
-    lib.mapAttrs (target: src: {source = ../config/${src};}) simpleFiles;
+    lib.mapAttrs (target: src: {source = ./config/${src};}) simpleFiles;
 
   configDirs = [
     "fish"
@@ -44,7 +44,7 @@
     lib.genAttrs
     (map (n: ".config/${n}") configDirs)
     (path: {
-      source = ../config/${builtins.baseNameOf path};
+      source = ./config/${builtins.baseNameOf path};
       recursive = true;
     });
 
@@ -125,7 +125,7 @@ in {
       vimAlias = true;
       vimdiffAlias = true;
     };
-    starship = import ../lib/starship.nix;
-    git = import ../lib/git.nix;
+    starship = import lib/starship.nix;
+    git = import lib/git.nix;
   };
 }

@@ -2,7 +2,6 @@
   description = "Home Manager configuration of jonathan";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -22,12 +21,12 @@
     homeConfigurations."jonathan" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
-      # Specify your home configuration modules here, for example,
-      # the path to your home.nix.
-      modules = [./home.nix];
+      modules = [./base.nix];
+    };
+    homeConfigurations."jonathan@sephiroth" = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
 
-      # Optionally use extraSpecialArgs
-      # to pass through arguments to home.nix
+      modules = [./base.nix ./gaming.nix ./gnome.nix];
     };
   };
 }

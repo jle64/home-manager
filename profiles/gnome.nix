@@ -1,8 +1,5 @@
-{ ... }:
-
-{
+{...}: {
   dconf.settings = {
-
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
@@ -56,7 +53,5 @@
       command = "bash -c 'gio open https://duckduckgo.com/\"$(wl-paste -p)\"''";
       name = "Duckduckgo";
     };
-
   };
 }
-

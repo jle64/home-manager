@@ -32,7 +32,6 @@
     "wezterm"
     "xkb"
     "xonsh"
-    "zsh"
   ];
 
   dirAttrs =

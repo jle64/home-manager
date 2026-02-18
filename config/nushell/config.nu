@@ -46,6 +46,7 @@ $env.config = {
             truncating_suffix: "..."
         }
         header_on_separator: false
+	footer_inheritance: true
     }
 
     history: {

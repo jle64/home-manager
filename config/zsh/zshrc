@@ -13,8 +13,11 @@ if [[ -s "${XDG_CONFIG_HOME}/zprezto/init.zsh" ]]; then
 	source "${XDG_CONFIG_HOME}/zprezto/init.zsh"
 fi
 
-# Source zsh specific and supplementary scripts
-for config in "${XDG_CONFIG_HOME}"/profile.d/*.{z,}sh; do
+# Source zsh specific and common shell scripts
+for config in "${XDG_CONFIG_HOME}"zsh/conf.d/*.zsh; do
+	source "${config}"
+done
+for config in "${XDG_CONFIG_HOME}"sh/conf.d/*.sh; do
 	source "${config}"
 done
 unset -v config

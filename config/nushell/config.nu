@@ -59,7 +59,7 @@ $env.config = {
         case_sensitive: false
         quick: true   
         partial: true   
-        algorithm: "prefix"   
+        algorithm: "fuzzy"   
         external: {
             enable: true
             max_results: 100
@@ -82,7 +82,7 @@ $env.config = {
         env_change: {
             PWD: [{|before, after| null }]
         }
-        display_output: "if (term size).columns >= 100 { table -e } else { table }"
+        display_output: "table --expand --theme light"
         command_not_found: { null }
     }
 

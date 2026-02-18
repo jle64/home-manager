@@ -15,7 +15,10 @@ done
 unset -v DIR
 
 # Source bash specific and supplementary scripts
-for config in "${XDG_CONFIG_HOME}"/profile.d/*.{ba,}sh; do
+for config in "${XDG_CONFIG_HOME}"/bash/conf.d/*.bash; do
+	source "${config}"
+done
+for config in "${XDG_CONFIG_HOME}"/sh/conf.d/*.sh; do
 	source "${config}"
 done
 unset -v config

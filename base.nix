@@ -4,14 +4,6 @@
   lib,
   ...
 }: let
-  profile.d = pkgs.symlinkJoin {
-    name = "profile.d";
-    paths = [
-      config/sh/profile.d
-      config/bash/profile.d
-      config/zsh/profile.d
-    ];
-  };
 
   simpleFiles = {
     ".ansible.cfg" = "ansible/ansible.cfg";
@@ -30,14 +22,17 @@
     lib.mapAttrs (target: src: {source = ./config/${src};}) simpleFiles;
 
   configDirs = [
+    "bash"
     "fish"
     "kitty"
     "nushell"
     "nvim"
+    "sh"
     "sway"
     "wezterm"
     "xkb"
     "xonsh"
+    "zsh"
   ];
 
   dirAttrs =
@@ -48,12 +43,6 @@
       recursive = true;
     });
 
-  profileDirAttr = {
-    ".config/profile.d" = {
-      source = profile.d;
-      recursive = true;
-    };
-  };
 in {
   home = {
     username = "jonathan";
@@ -112,8 +101,7 @@ in {
       zoxide
     ];
 
-    file = fileAttrs // dirAttrs // profileDirAttr;
-    sessionVariables = {EDITOR = "nvim";};
+    file = fileAttrs // dirAttrs;
   };
 
   programs = {
@@ -125,6 +113,7 @@ in {
       viAlias = true;
       vimAlias = true;
       vimdiffAlias = true;
+      defaultEditor = true;
     };
     starship = import lib/starship.nix;
     git = import lib/git.nix;

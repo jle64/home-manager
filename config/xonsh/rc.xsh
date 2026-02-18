@@ -15,6 +15,6 @@ $MULTILINE_PROMPT = ' '
 $MOUSE_SUPPORT = True
 $AUTO_CD = True
 
-# cheat and load our aliases from bash
-source-bash $XDG_CONFIG_HOME/profile.d/aliases.sh &>/dev/null
-source-bash $XDG_CONFIG_HOME/profile.d/environment.sh &>/dev/null
+# cheat and load our aliases and env from sh
+source-bash $XDG_CONFIG_HOME/sh/conf.d/aliases.sh &>/dev/null
+source-bash $XDG_CONFIG_HOME/sh/conf.d/environment.sh &>/dev/null

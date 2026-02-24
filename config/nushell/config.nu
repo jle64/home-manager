@@ -83,7 +83,7 @@ $env.config = {
         env_change: {
             PWD: [{|before, after| null }]
         }
-        display_output: "table --expand --theme light"
+        display_output: "table --expand"
         command_not_found: { null }
     }
 

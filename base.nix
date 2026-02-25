@@ -66,7 +66,6 @@ in {
       fish
       fishPlugins.bass
       fishPlugins.fzf-fish
-      fishPlugins.z
       fzf
       gron
       jj

@@ -4,7 +4,6 @@
   lib,
   ...
 }: let
-
   simpleFiles = {
     ".ansible.cfg" = "ansible/ansible.cfg";
     ".bash_logout" = "bash/bash_logout";
@@ -41,7 +40,6 @@
       source = ./config/${builtins.baseNameOf path};
       recursive = true;
     });
-
 in {
   home = {
     username = "jonathan";
@@ -66,6 +64,7 @@ in {
       fish
       fishPlugins.bass
       fishPlugins.fzf-fish
+      fishPlugins.git-abbr
       fzf
       gron
       jj
@@ -76,6 +75,7 @@ in {
       ncdu
       nmap
       nushell
+      nushellPlugins.skim
       pandoc
       progress
       pv

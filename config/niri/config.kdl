@@ -9,7 +9,7 @@ input {
 }
 
 layout {
-    gaps 5
+    gaps 4
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -54,7 +54,7 @@ debug {
 
 
 window-rule {
-  geometry-corner-radius 20
+  geometry-corner-radius 8
   clip-to-geometry true
 }
 
@@ -67,7 +67,7 @@ window-rule {
 window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false
-    geometry-corner-radius 12
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 
@@ -84,7 +84,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Shift+Comma { show-hotkey-overlay; }
-    Mod+T hotkey-overlay-title="Open a Terminal" { spawn "ptyxis"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "kitty"; }
 
     // Application Launchers
     Mod+Space hotkey-overlay-title="Application Launcher" {
@@ -113,21 +113,27 @@ binds {
 
     // Audio Controls
     XF86AudioRaiseVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "increment" "3";
+        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+";
     }
     XF86AudioLowerVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "decrement" "3";
+        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%-";
     }
     XF86AudioMute allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "mute";
+        spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
     }
+
+    // Media Controls
+    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
+    XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86AudioStop allow-when-locked=true { spawn "playerctl" "stop"; }
 
     // Brightness Controls
     XF86MonBrightnessUp allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+       spawn "brightnessctl" "set" "5%+";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+       spawn "brightnessctl" "set" "5%-";
     }
 
     Mod+O repeat=false { toggle-overview; }
@@ -202,8 +208,8 @@ binds {
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
 
-    Mod+TouchpadScrollDown { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
-    Mod+TouchpadScrollUp   { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
+    Mod+TouchpadScrollDown { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%-"; }
+    Mod+TouchpadScrollUp   { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+"; }
 
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
@@ -235,7 +241,7 @@ binds {
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Ctrl+F { expand-column-to-available-width; }
-    Mod+C { center-column; }
+    //Mod+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
@@ -261,7 +267,7 @@ binds {
 }
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 

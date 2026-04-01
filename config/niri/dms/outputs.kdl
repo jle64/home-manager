@@ -9,7 +9,7 @@ output "eDP-1" {
         top-right
     }
     layout {
-        gaps 5
+        gaps 4
         always-center-single-column
     }
 }

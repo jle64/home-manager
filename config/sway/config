@@ -7,7 +7,7 @@ set $mod_win Mod4
 set $mod_ws Mod1
 
 set $term kitty
-set $menu wofi --show drun
+set $menu dms ipc call spotlight toggle
 set $primary eDP-1
 set $secondary HDMI-A-1
 
@@ -20,3 +20,6 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit session ?' -B 'Yay' 'swaym
 
 include /etc/sway/config.d/*
 include /home/jonathan/.config/sway/config.d/*.conf
+
+include ~/.config/sway/noctalia
+

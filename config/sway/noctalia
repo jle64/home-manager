@@ -1,0 +1,18 @@
+set $primary            #ffffff
+set $on_primary         #1b1b1b
+set $secondary          #c6c6c6
+set $tertiary           #e2e2e2
+set $error              #ffb4ab
+set $surface            #131313
+set $on_surface         #e2e2e2
+set $on_surface_variant #c6c6c6
+set $outline            #919191
+
+## Window Colours
+# class                 border    backgr.   text                indicator  child_border
+client.focused          $primary  $surface  $on_surface         $primary   $primary
+client.focused_inactive $outline  $surface  $on_surface_variant $outline   $outline
+client.unfocused        $outline  $surface  $on_surface_variant $outline   $outline
+client.urgent           $error    $surface  $on_surface         $error     $error
+client.placeholder      $surface  $surface  $on_surface_variant $surface   $surface
+client.background       $surface

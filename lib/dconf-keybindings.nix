@@ -24,14 +24,14 @@
   };
 
   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-    binding = "<Super>l";
+    binding = "<Super>w";
     command = "flatpak run io.gitlab.librewolf-community";
     name = "LibreWolf";
   };
 
   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-    binding = "<Super>c";
-    command = "ptyxis --new-window";
+    binding = "<Super>Return";
+    command = "kitty";
     name = "Console";
   };
 

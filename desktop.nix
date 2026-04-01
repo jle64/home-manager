@@ -18,6 +18,7 @@
 
   configDirs = [
     "DankMaterialShell"
+    "hypr"
     "kitty"
     "niri"
     "sway"
@@ -33,6 +34,10 @@
     });
 in {
   home = {
+    packages = with pkgs; [
+      brightnessctl
+      playerctl
+    ];
     file = fileAttrs // dirAttrs;
   };
 }

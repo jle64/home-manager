@@ -99,12 +99,18 @@ binds {
     Mod+Comma hotkey-overlay-title="Settings" {
         spawn "dms" "ipc" "call" "settings" "focusOrToggle";
     }
-    Mod+N hotkey-overlay-title="Notification Center" {
+    Mod+Shift+N hotkey-overlay-title="Notification Center" {
         spawn "dms" "ipc" "call" "notifications" "toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
+
+    // Apps
+    Mod+N hotkey-overlay-title="Nautilus" { spawn "nautilus"; }
+    Mod+W hotkey-overlay-title="LibreWolf" { spawn "flatpak" "run" "io.gitlab.librewolf-community"; }
+    Mod+T hotkey-overlay-title="Thunderbird" { spawn "flatpak" "run" "org.mozilla.Thunderbird"; }
+    Mod+E hotkey-overlay-title="Text Editor" { spawn "flatpak" "run" "org.gnome.TextEditor"; }
 
     // Security
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {

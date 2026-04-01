@@ -4,7 +4,7 @@
 #
 set $mod Mod4
 set $mod_win Mod4
-set $mod_ws Mod1
+set $mod_ws Mod4
 
 set $term kitty
 set $menu dms ipc call spotlight toggle

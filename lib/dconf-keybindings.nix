@@ -7,7 +7,6 @@
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/"
-      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/"
     ];
   };
 
@@ -45,11 +44,5 @@
     binding = "<Super>e";
     command = "flatpak run org.gnome.TextEditor";
     name = "Editor";
-  };
-
-  "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7" = {
-    binding = "<Super>d";
-    command = "bash -c 'gio open https://duckduckgo.com/\"$(wl-paste -p)\"''";
-    name = "Duckduckgo";
   };
 }

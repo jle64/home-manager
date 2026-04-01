@@ -7,7 +7,7 @@ set $mod_win Mod4
 set $mod_ws Mod4
 
 set $term kitty
-set $menu dms ipc call spotlight toggle
+set $menu shell-ipc spotlight toggle
 set $primary eDP-1
 set $secondary HDMI-A-1
 

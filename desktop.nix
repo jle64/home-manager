@@ -37,6 +37,25 @@ in {
     packages = with pkgs; [
       brightnessctl
       playerctl
+      (writeShellScriptBin "shell-ipc" ''
+        TARGET=$1
+        ACTION=$2
+
+        if pgrep -f "noctalia-shell" > /dev/null || pgrep -x "qs" > /dev/null; then
+            case "$TARGET" in
+                spotlight)   TARGET="launcher"; ACTION="toggle" ;;
+                clipboard)   TARGET="launcher"; ACTION="clipboard" ;;
+                processlist) TARGET="systemMonitor"; ACTION="toggle" ;;
+                settings)    TARGET="settings"; ACTION="toggle" ;;
+                notifications) TARGET="notifications"; ACTION="toggleHistory" ;;
+                dankdash)    TARGET="wallpaper"; ACTION="toggle" ;;
+                lock)        TARGET="lockScreen"; ACTION="lock" ;;
+            esac
+            exec qs -c noctalia-shell ipc call "$TARGET" "$ACTION"
+        else
+            exec dms ipc call "$TARGET" "$ACTION"
+        fi
+      '')
     ];
     file = fileAttrs // dirAttrs;
   };

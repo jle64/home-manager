@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -105,11 +105,11 @@
                 },
                 {
                     "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
+                    "customFont": "3270 Nerd Font Mono Cond",
+                    "formatHorizontal": "HH:mm, dddd d MMMM",
+                    "formatVertical": "HH mm ddd d MMM",
                     "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "tooltipFormat": "HH:mm:ss, dddd d MMMM yyyy t",
                     "useCustomFont": false
                 },
                 {
@@ -252,7 +252,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin Lavender",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -293,6 +293,9 @@
                 },
                 {
                     "id": "Bluetooth"
+                },
+                {
+                    "id": "AirplaneMode"
                 },
                 {
                     "defaultSettings": {
@@ -369,12 +372,12 @@
         "groupClickAction": "cycle",
         "groupContextMenuMode": "extended",
         "groupIndicatorStyle": "dots",
-        "inactiveIndicators": false,
+        "inactiveIndicators": true,
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
         "launcherIcon": "",
-        "launcherIconColor": "none",
+        "launcherIconColor": "tertiary",
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,
         "monitors": [
@@ -386,10 +389,10 @@
             "kitty",
             "io.github.kolunmi.Bazaar"
         ],
-        "pinnedStatic": false,
+        "pinnedStatic": true,
         "position": "bottom",
         "showDockIndicator": false,
-        "showLauncherIcon": false,
+        "showLauncherIcon": true,
         "sitOnFrame": false,
         "size": 2
     },
@@ -437,8 +440,8 @@
         },
         "language": "",
         "lockOnSuspend": true,
-        "lockScreenAnimations": false,
-        "lockScreenBlur": 0,
+        "lockScreenAnimations": true,
+        "lockScreenBlur": 0.25,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
         ],
@@ -486,7 +489,7 @@
     },
     "location": {
         "analogClockInCalendar": true,
-        "firstDayOfWeek": -1,
+        "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
         "name": "Beuzeville",
@@ -683,6 +686,14 @@
             {
                 "enabled": true,
                 "id": "sway"
+            },
+            {
+                "enabled": true,
+                "id": "hyprland"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
             }
         ],
         "enableUserTheming": true

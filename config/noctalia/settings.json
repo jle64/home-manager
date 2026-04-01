@@ -249,14 +249,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "monochrome",
+        "generationMethod": "dysfunctional",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Ayu",
+        "predefinedScheme": "Catppuccin Lavender",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -386,7 +386,8 @@
         "onlySameOutput": true,
         "pinnedApps": [
             "org.gnome.Ptyxis",
-            "io.gitlab.librewolf-community"
+            "io.gitlab.librewolf-community",
+            "kitty"
         ],
         "pinnedStatic": false,
         "position": "bottom",
@@ -401,7 +402,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/var/home/jonathan/.face",
+        "avatarImage": "",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -477,7 +478,7 @@
         "enabled": true,
         "fadeDuration": 10,
         "lockCommand": "",
-        "lockTimeout": 660,
+        "lockTimeout": 0,
         "resumeLockCommand": "",
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",

@@ -4,7 +4,7 @@ return {
   -- transparent background
   window_background_opacity = 1.0,
   -- theme
-  color_scheme = "Qualia (base16)",
+  color_scheme = "Noctalia",
 
   -- have a basic local mux connection so `wezterm connect unix` can be used
   unix_domains = {

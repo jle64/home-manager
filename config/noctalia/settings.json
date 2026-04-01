@@ -34,7 +34,7 @@
         "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "ptyxis",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [

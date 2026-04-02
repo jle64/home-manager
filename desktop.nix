@@ -21,6 +21,13 @@
     "niri"
     "xkb"
   ];
+
+  dirAttrs =
+    lib.genAttrs
+    (map (n: ".config/${n}") configDirs)
+    (path: {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/config/${builtins.baseNameOf path}";
+    });
 in {
   home = {
     packages = with pkgs; [

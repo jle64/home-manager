@@ -9,11 +9,8 @@
     ".bash_logout" = "bash/bash_logout";
     ".bash_profile" = "bash/bash_profile";
     ".bashrc" = "bash/bashrc";
-    ".dircolors" = "coreutils/dircolors";
     ".inputrc" = "readline/inputrc";
-    ".profile" = "sh/profile";
-    ".screenrc" = "screen/screenrc";
-    ".shrc" = "sh/shrc";
+    ".profile" = "bash/profile";
     ".ssh/config" = "ssh/config";
     ".config/fish/conf.d" = "fish/conf.d";
     ".config/fish/functions" = "fish/functions";
@@ -29,8 +26,6 @@
   configDirs = [
     "bash"
     "nushell"
-    "sh"
-    "xonsh"
   ];
 
   dirAttrs =
@@ -58,9 +53,7 @@ in {
       fd
       fish
       fishPlugins.bass
-      fishPlugins.fzf-fish
       fishPlugins.git-abbr
-      fzf
       gron
       jj
       jq
@@ -84,7 +77,6 @@ in {
       testssl
       tig
       trash-cli
-      ugrep
       vimPlugins.vim-plug
       xh
       yq

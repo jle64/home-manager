@@ -1,6 +1,3 @@
-# Set ENV to a file invoked each time sh is started for interactive use
-ENV=$HOME/.shrc; export ENV
-
 # Set XDG_ vars to their default values if they're empty
 # so we can rely on them being there elsewhere
 if [ -z "$XDG_CONFIG_HOME" ]; then

@@ -1,17 +1,14 @@
-if [ "$(uname)" = "Linux" ]; then # TODO: check for gnu ls instead
-	alias ls="ls --group-directories-first --hyperlink=auto"
-	alias l="ls --group-directories-first --hyperlink=auto"
-	alias ll="ls -lh --group-directories-first --hyperlink=auto"
-else
-	alias l="ls"
-	alias ll="ls -lh"
-fi
-alias l.="ls -ld .*"
-alias la="ls -lhA"
+alias ls='eza --group-directories-first --hyperlink --group --git --time-style long-iso'
+alias tree='ls --tree -A --git-ignore'
+alias l='ls'
+alias l.='ls -ld .*'
+alias lc='ls -1'
+alias la='ls -lha'
+alias ll='ls -lh'
+alias lsd='ls -ail'
 alias lx="ls -lhAxb"          # sort by extension
 alias lk="ls -lhASr"          # sort by size, biggest last
 alias lt="ls -lhAtr"          # sort by date, most recent last
-alias lsb="ls -ail"
 alias g="egrep -i"
 alias e="emacs -nw"
 alias vi="nvim"
@@ -37,11 +34,6 @@ fi
 ### Color ###
 
 alias ip="ip -c"
-alias tree="tree -C"
-
-if ls --version 2>/dev/null | grep -q GNU; then
-	alias ls="ls --color=auto --group-directories-first --hyperlink=auto"
-fi
 
 for cmd in grep egrep fgrep diff; do
 	if $cmd --version 2>/dev/null | grep -q GNU; then

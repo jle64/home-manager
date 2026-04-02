@@ -18,11 +18,7 @@ unset -v DIR
 for config in "${XDG_CONFIG_HOME}"/bash/conf.d/*.bash; do
 	source "${config}"
 done
-for config in "${XDG_CONFIG_HOME}"/sh/conf.d/*.sh; do
-	source "${config}"
-done
 unset -v config
 
 # Load local stuff
 [ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local" || true
-[ -f "${HOME}/.shrc.local" ] && source "${HOME}/.shrc.local" || true

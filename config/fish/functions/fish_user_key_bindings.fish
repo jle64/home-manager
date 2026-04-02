@@ -1,6 +1,8 @@
 # for fedora
-source /usr/share/fzf/shell/key-bindings.fish &>/dev/null
+source /usr/share/skim/key-bindings.fish &>/dev/null
 
 function fish_user_key_bindings
-    fzf_key_bindings
+    if functions -q sk_key_bindings
+        sk_key_bindings
+    end
 end

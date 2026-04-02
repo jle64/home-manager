@@ -34,8 +34,9 @@ overview {
   }
 }
 
-//spawn-at-startup "dms" "run"
+
 spawn-at-startup "qs" "-c" "noctalia-shell"
+
 
 hotkey-overlay {
     skip-at-startup
@@ -58,11 +59,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false
     geometry-corner-radius 8
@@ -70,7 +66,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
     match app-id="Alacritty"
     match app-id="zen"
     match app-id="com.mitchellh.ghostty"
@@ -85,22 +80,22 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "kitty"; }
 
     Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "shell-ipc" "spotlight" "toggle";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle";
     }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "shell-ipc" "clipboard" "toggle";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard";
     }
     Mod+M hotkey-overlay-title="Task Manager" {
-        spawn "shell-ipc" "processlist" "focusOrToggle";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
-        spawn "shell-ipc" "settings" "focusOrToggle";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle";
     }
     Mod+Shift+N hotkey-overlay-title="Notification Center" {
-        spawn "shell-ipc" "notifications" "toggle";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "shell-ipc" "dankdash" "wallpaper";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle";
     }
 
     Mod+N hotkey-overlay-title="Nautilus" { spawn "nautilus"; }
@@ -109,7 +104,7 @@ binds {
     Mod+E hotkey-overlay-title="Text Editor" { spawn "flatpak" "run" "org.gnome.TextEditor"; }
 
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
-        spawn "shell-ipc" "lock" "lock";
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock";
     }
 
     XF86AudioRaiseVolume allow-when-locked=true {
@@ -280,22 +275,10 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="dms:blurwallpaper"
-    place-within-backdrop true
-}
-
-layer-rule {
   match namespace="^noctalia-overview*"
   place-within-backdrop true
 }
 
-include "dms/binds.kdl"
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/alttab.kdl"
-include "dms/outputs.kdl"
-include "dms/cursor.kdl"
-include "dms/wpblur.kdl"
-
 include "./noctalia.kdl"
+
 

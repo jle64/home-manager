@@ -17,15 +17,21 @@ function fish_prompt
         set_color green
     end
     echo -n $USER
-    if [ -z "$SSH_CLIENT" ]
-        set_color brown
-    else
-        set_color magenta
-    end
+    set -l host_hash (hostname | cksum | cut -d' ' -f1)
+    set -l colors_count (tput colors)
+    if test -z "$colors_count"; set colors_count 8; end
+    set -l host_color_idx (math "1 + $host_hash % ($colors_count - 1)")
+
+    tput setaf $host_color_idx
     echo -n @
     echo -n (hostname):
     set_color cyan
     echo -n (pwd|sed "s=$HOME=~=")
+
+    if set -q GUIX_ENVIRONMENT
+        set_color magenta
+        echo -n " (guix)"
+    end
     set -g __fish_git_prompt_show_informative_status 1
     set -g __fish_git_prompt_hide_untrackedfiles 1
     set -g __fish_git_prompt_showupstream "informative"
@@ -39,6 +45,12 @@ function fish_prompt
     set -g __fish_git_prompt_char_cleanstate "✔"
     set_color magenta
     printf '%s ' (__fish_vcs_prompt)
+
+    if test -f /run/reboot-required
+        set_color red
+        echo -n '[!]'
+    end
+
     echo
     set_color normal
     for job in (jobs)

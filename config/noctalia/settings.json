@@ -51,10 +51,10 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 1,
         "barType": "simple",
         "capsuleColorKey": "primary",
-        "capsuleOpacity": 1,
+        "capsuleOpacity": 0.2,
         "contentPadding": 2,
         "density": "comfortable",
         "displayMode": "always_visible",
@@ -65,14 +65,14 @@
         "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
-        "middleClickAction": "none",
+        "middleClickAction": "settings",
         "middleClickCommand": "",
-        "middleClickFollowMouse": false,
+        "middleClickFollowMouse": true,
         "monitors": [
         ],
         "mouseWheelAction": "workspace",
         "mouseWheelWrap": true,
-        "outerCorners": true,
+        "outerCorners": false,
         "position": "top",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
@@ -80,7 +80,7 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,
@@ -247,7 +247,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "dysfunctional",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -400,7 +400,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 1,
+        "animationSpeed": 1.5,
         "autoStartAuth": false,
         "avatarImage": "",
         "boxRadiusRatio": 1,
@@ -451,8 +451,8 @@
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 0.75,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
+        "shadowDirection": "bottom",
+        "shadowOffsetX": 0,
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
@@ -514,7 +514,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "08:00",
         "manualSunset": "22:00",
@@ -673,23 +673,11 @@
             },
             {
                 "enabled": true,
-                "id": "wezterm"
-            },
-            {
-                "enabled": true,
                 "id": "zed"
             },
             {
                 "enabled": true,
                 "id": "kitty"
-            },
-            {
-                "enabled": true,
-                "id": "sway"
-            },
-            {
-                "enabled": true,
-                "id": "hyprland"
             },
             {
                 "enabled": true,
@@ -699,18 +687,18 @@
         "enableUserTheming": true
     },
     "ui": {
-        "boxBorderEnabled": false,
+        "boxBorderEnabled": true,
         "fontDefault": "Sans Serif",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 0.9500000000000001,
         "panelsAttachedToBar": true,
-        "scrollbarAlwaysVisible": true,
+        "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,

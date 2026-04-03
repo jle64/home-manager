@@ -53,12 +53,12 @@
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
         "barType": "simple",
-        "capsuleColorKey": "primary",
-        "capsuleOpacity": 0.2,
+        "capsuleColorKey": "none",
+        "capsuleOpacity": 1,
         "contentPadding": 2,
         "density": "comfortable",
         "displayMode": "always_visible",
-        "enableExclusionZoneInset": true,
+        "enableExclusionZoneInset": false,
         "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
@@ -83,7 +83,7 @@
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -205,7 +205,7 @@
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
-                    "middleClickCommand": "pwvucontrol || pavucontrol",
+                    "middleClickCommand": "wpctl set-mute 50 toggle",
                     "textColor": "none"
                 },
                 {
@@ -253,12 +253,12 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "dysfunctional",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Rose Pine",
+        "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -290,7 +290,7 @@
                 "id": "media-sysmon-card"
             }
         ],
-        "diskPath": "/var/home",
+        "diskPath": "/var",
         "position": "close_to_bar_button",
         "shortcuts": {
             "left": [
@@ -393,7 +393,8 @@
             "io.gitlab.librewolf-community",
             "dev.zed.Zed",
             "kitty",
-            "io.github.kolunmi.Bazaar"
+            "io.github.kolunmi.Bazaar",
+            "org.gnome.Nautilus"
         ],
         "pinnedStatic": true,
         "position": "bottom",
@@ -456,7 +457,7 @@
         "radiusRatio": 1,
         "reverseScroll": false,
         "scaleRatio": 1,
-        "screenRadiusRatio": 0.75,
+        "screenRadiusRatio": 0.5,
         "shadowDirection": "bottom",
         "shadowOffsetX": 0,
         "shadowOffsetY": 3,
@@ -499,14 +500,15 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Gaillon",
+        "name": "Zaventem",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
         "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
-        "weatherShowEffects": true
+        "weatherShowEffects": true,
+        "weatherTaliaMascotAlways": false
     },
     "network": {
         "bluetoothAutoConnect": true,

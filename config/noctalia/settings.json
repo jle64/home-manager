@@ -52,9 +52,9 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "simple",
-        "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "barType": "framed",
+        "capsuleColorKey": "primary",
+        "capsuleOpacity": 0.5,
         "contentPadding": 2,
         "density": "comfortable",
         "displayMode": "always_visible",
@@ -73,12 +73,16 @@
         "mouseWheelAction": "workspace",
         "mouseWheelWrap": true,
         "outerCorners": false,
-        "position": "top",
+        "position": "left",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
+            {
+                "enabled": false,
+                "name": "eDP-1"
+            }
         ],
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
@@ -98,6 +102,14 @@
                 },
                 {
                     "id": "plugin:weekly-calendar"
+                },
+                {
+                    "hideWhenZero": true,
+                    "hideWhenZeroUnread": true,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 }
             ],
             "left": [
@@ -106,7 +118,7 @@
                     "colorizeIcons": false,
                     "emptyColor": "secondary",
                     "enableScrollWheel": true,
-                    "focusedColor": "primary",
+                    "focusedColor": "none",
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
@@ -146,14 +158,6 @@
                     "id": "Tray",
                     "pinned": [
                     ]
-                },
-                {
-                    "hideWhenZero": true,
-                    "hideWhenZeroUnread": true,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
                 },
                 {
                     "defaultSettings": {
@@ -241,14 +245,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "dysfunctional",
+        "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "Naysayer",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -731,18 +735,18 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": false,
+        "useWallhaven": true,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
         "wallhavenQuery": "",
-        "wallhavenRatios": "",
-        "wallhavenResolutionHeight": "",
+        "wallhavenRatios": "landscape",
+        "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "atleast",
-        "wallhavenResolutionWidth": "",
-        "wallhavenSorting": "relevance",
+        "wallhavenResolutionWidth": "1920",
+        "wallhavenSorting": "favorites",
         "wallpaperChangeMode": "random"
     }
 }

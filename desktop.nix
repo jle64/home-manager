@@ -18,6 +18,7 @@
 
   configDirs = [
     "kitty"
+    "mango"
     "niri"
     "xkb"
   ];

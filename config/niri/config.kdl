@@ -92,7 +92,7 @@ binds {
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle";
     }
-    Mod+Comma hotkey-overlay-title="Settings" {
+    Mod+S hotkey-overlay-title="Settings" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle";
     }
     Mod+Shift+N hotkey-overlay-title="Notification Center" {
@@ -104,7 +104,7 @@ binds {
 
     Mod+N hotkey-overlay-title="Nautilus" { spawn "nautilus"; }
     Mod+W hotkey-overlay-title="LibreWolf" { spawn "flatpak" "run" "io.gitlab.librewolf-community"; }
-    Mod+T hotkey-overlay-title="Thunderbird" { spawn "flatpak" "run" "org.mozilla.Thunderbird"; }
+    Mod+B hotkey-overlay-title="Thunderbird" { spawn "flatpak" "run" "org.mozilla.Thunderbird"; }
     Mod+E hotkey-overlay-title="Text Editor" { spawn "flatpak" "run" "org.gnome.TextEditor"; }
 
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
@@ -229,8 +229,9 @@ binds {
 
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
-    Mod+Colon  { consume-window-into-column; }
-    Mod+SemiColon { expel-window-from-column; }
+    Mod+Comma  { consume-window-into-column; }
+    Mod+Colon { expel-window-from-column; }
+    Mod+Period { expel-window-from-column; }
 
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
@@ -238,18 +239,18 @@ binds {
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Ctrl+F { expand-column-to-available-width; }
-    //Mod+C { center-column; }
+    Mod+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
-    //Mod+V       { toggle-window-floating; }
-    //Mod+Shift+V { switch-focus-between-floating-and-tiling; }
-    //Mod+W { toggle-column-tabbed-display; }
-    //Mod+Space       { switch-layout "next"; }
-    //Mod+Shift+Space { switch-layout "prev"; }
+    Mod+G      { toggle-window-floating; }
+    Mod+Shift+G { switch-focus-between-floating-and-tiling; }
+    Mod+T { toggle-column-tabbed-display; }
+    Mod+X       { switch-layout "next"; }
+    Mod+Shift+X { switch-layout "prev"; }
 
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }

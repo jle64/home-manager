@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -34,7 +34,7 @@
         "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "ptyxis",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [
@@ -99,17 +99,6 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
-                },
-                {
-                    "id": "plugin:weekly-calendar"
-                },
-                {
-                    "hideWhenZero": true,
-                    "hideWhenZeroUnread": true,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
                 }
             ],
             "left": [
@@ -133,6 +122,14 @@
                     "showBadge": false,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "hideWhenZero": true,
+                    "hideWhenZeroUnread": true,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 }
             ],
             "right": [
@@ -196,7 +193,7 @@
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
-                    "middleClickCommand": "wpctl set-mute 50 toggle",
+                    "middleClickCommand": "wpctl set-mute 0 toggle",
                     "textColor": "none"
                 },
                 {

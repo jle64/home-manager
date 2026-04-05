@@ -5,7 +5,7 @@ input {
 		tap
 		natural-scroll
 	}
-	focus-follows-mouse max-scroll-amount="50%"
+	focus-follows-mouse max-scroll-amount="33%"
 }
 
 output "eDP-1" {

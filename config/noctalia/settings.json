@@ -61,7 +61,7 @@
         "enableExclusionZoneInset": false,
         "fontScale": 1,
         "frameRadius": 12,
-        "frameThickness": 8,
+        "frameThickness": 6,
         "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
@@ -93,12 +93,12 @@
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "",
+                    "customFont": "Inconsolata Nerd Font",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "useCustomFont": true
                 }
             ],
             "left": [
@@ -370,7 +370,7 @@
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
-        "launcherIcon": "",
+        "launcherIcon": "paw",
         "launcherIconColor": "tertiary",
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,

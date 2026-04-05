@@ -204,10 +204,10 @@ binds {
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+Ctrl+WheelScrollLeft  { move-column-left; }
 
-    Mod+Shift+WheelScrollDown      { focus-column-right; }
-    Mod+Shift+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+Alt+WheelScrollDown      { focus-column-right; }
+    Mod+Alt+WheelScrollUp        { focus-column-left; }
+    Mod+Alt+Ctrl+WheelScrollDown { move-column-right; }
+    Mod+Alt+Ctrl+WheelScrollUp   { move-column-left; }
 
     Mod+TouchpadScrollDown { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%-"; }
     Mod+TouchpadScrollUp   { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+"; }

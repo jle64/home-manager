@@ -104,6 +104,10 @@
       algorithm = "histogram";
       external = "difft";
     };
+    
+    http = {
+      sslCAInfo = "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem";
+    };
 
     "url \"git@github.com:\"" = {
       insteadOf = [

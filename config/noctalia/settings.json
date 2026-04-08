@@ -29,11 +29,11 @@
             "be.alexandervanhee.gradia"
         ],
         "position": "center",
-        "screenshotAnnotationTool": "",
+        "screenshotAnnotationTool": "gradia",
         "showCategories": true,
-        "showIconBackground": true,
+        "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "ptyxis",
+        "terminalCommand": "kitty",
         "viewMode": "grid"
     },
     "audio": {
@@ -210,7 +210,7 @@
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
                     "enableColorization": false,
-                    "icon": "brand-baidu",
+                    "icon": "settings",
                     "id": "ControlCenter",
                     "useDistroLogo": false
                 }
@@ -371,7 +371,7 @@
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
         "launcherIcon": "paw",
-        "launcherIconColor": "tertiary",
+        "launcherIconColor": "none",
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,
         "monitors": [
@@ -387,8 +387,8 @@
         "pinnedStatic": true,
         "position": "bottom",
         "showDockIndicator": false,
-        "showLauncherIcon": true,
-        "sitOnFrame": false,
+        "showLauncherIcon": false,
+        "sitOnFrame": true,
         "size": 2
     },
     "general": {
@@ -488,7 +488,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Gaillon",
+        "name": "Zaventem",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,

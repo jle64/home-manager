@@ -98,7 +98,7 @@ in {
       vimdiffAlias = true;
       defaultEditor = true;
     };
-    starship = import lib/starship.nix;
+    #starship = import lib/starship.nix;
     git = import lib/git.nix;
   };
 }

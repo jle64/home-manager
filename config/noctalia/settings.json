@@ -93,7 +93,7 @@
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "Inconsolata Nerd Font",
+                    "customFont": "Montserrat SemiBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
@@ -124,15 +124,24 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
+                    "colorizeSystemIcon": "none",
+                    "customIconPath": "",
+                    "enableColorization": false,
+                    "icon": "paw-filled",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": false
+                }
+            ],
+            "right": [
+                {
                     "hideWhenZero": true,
                     "hideWhenZeroUnread": true,
                     "iconColor": "none",
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "primary"
-                }
-            ],
-            "right": [
+                },
                 {
                     "defaultSettings": {
                         "activeColor": "primary",
@@ -193,7 +202,7 @@
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
-                    "middleClickCommand": "wpctl set-mute 0 toggle",
+                    "middleClickCommand": "wpctl set-mute 50 toggle",
                     "textColor": "none"
                 },
                 {
@@ -242,7 +251,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -488,7 +497,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Gaillon",
+        "name": "Zaventem",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -738,7 +747,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "mononoke",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "atleast",

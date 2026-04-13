@@ -92,7 +92,7 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "none",
+                    "clockColor": "secondary",
                     "customFont": "Montserrat SemiBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
@@ -127,7 +127,7 @@
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
                     "enableColorization": false,
-                    "icon": "paw-filled",
+                    "icon": "planet",
                     "iconColor": "none",
                     "id": "Launcher",
                     "useDistroLogo": false
@@ -250,7 +250,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -497,7 +497,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Brussels",
+        "name": "Zaventem",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -520,7 +520,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "08:00",
         "manualSunset": "22:00",

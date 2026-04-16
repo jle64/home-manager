@@ -117,9 +117,9 @@
                     "labelMode": "none",
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
-                    "showApplications": true,
-                    "showApplicationsHover": true,
-                    "showBadge": false,
+                    "showApplications": false,
+                    "showApplicationsHover": false,
+                    "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
                 },
@@ -127,7 +127,7 @@
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
                     "enableColorization": false,
-                    "icon": "planet",
+                    "icon": "pokeball",
                     "iconColor": "none",
                     "id": "Launcher",
                     "useDistroLogo": false

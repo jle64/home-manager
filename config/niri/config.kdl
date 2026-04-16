@@ -82,7 +82,7 @@ binds {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"
     }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "toggle"
     }
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle"

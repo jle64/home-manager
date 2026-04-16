@@ -497,7 +497,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Zaventem",
+        "name": "Gaillon",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -549,7 +549,7 @@
         "respectExpireTimeout": false,
         "saveToHistory": {
             "critical": true,
-            "low": true,
+            "low": false,
             "normal": true
         },
         "sounds": {
@@ -741,13 +741,13 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
+        "useWallhaven": false,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "mononoke",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "atleast",

@@ -34,22 +34,14 @@ layout {
         place-within-column
     }
 }
-overview {
-    workspace-shadow {
-        off
-    }
-}
 spawn-at-startup "qs" "-c" "noctalia-shell"
+prefer-no-csd
+screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 hotkey-overlay {
     skip-at-startup
 }
-prefer-no-csd
-screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
     slowdown 0.6
-}
-debug {
-    honor-xdg-activation-with-invalid-serial
 }
 window-rule {
     geometry-corner-radius 8
@@ -92,9 +84,6 @@ binds {
     }
     Mod+Shift+N hotkey-overlay-title="Notification Center" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"
-    }
-    Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"
     }
     Mod+N hotkey-overlay-title="Nautilus" {
         spawn "nautilus"
@@ -402,10 +391,10 @@ binds {
     Mod+R {
         switch-preset-column-width
     }
-    Mod+Shift+R {
+    Mod+Y {
         switch-preset-window-height
     }
-    Mod+Ctrl+R {
+    Mod+Shift+Y {
         reset-window-height
     }
     Mod+F {

@@ -52,7 +52,7 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "framed",
+        "barType": "simple",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
@@ -61,9 +61,9 @@
         "enableExclusionZoneInset": false,
         "fontScale": 1,
         "frameRadius": 12,
-        "frameThickness": 6,
+        "frameThickness": 0,
         "hideOnOverview": true,
-        "marginHorizontal": 4,
+        "marginHorizontal": 0,
         "marginVertical": 4,
         "middleClickAction": "settings",
         "middleClickCommand": "",
@@ -71,7 +71,7 @@
         "monitors": [
         ],
         "mouseWheelAction": "workspace",
-        "mouseWheelWrap": true,
+        "mouseWheelWrap": false,
         "outerCorners": false,
         "position": "left",
         "reverseScroll": false,
@@ -92,7 +92,7 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "secondary",
+                    "clockColor": "none",
                     "customFont": "Montserrat SemiBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",

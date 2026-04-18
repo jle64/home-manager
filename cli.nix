@@ -98,6 +98,7 @@ in {
       vimdiffAlias = true;
       defaultEditor = true;
     };
+    skim.enableFishIntegration = true;
     #starship = import lib/starship.nix;
     git = import lib/git.nix;
   };

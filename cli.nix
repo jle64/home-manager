@@ -55,6 +55,7 @@ in {
       fishPlugins.bass
       fishPlugins.fzf
       fishPlugins.git-abbr
+      fzf
       gron
       jj
       jq

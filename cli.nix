@@ -53,6 +53,7 @@ in {
       fd
       fish
       fishPlugins.bass
+      fishPlugins.fzf
       fishPlugins.git-abbr
       gron
       jj

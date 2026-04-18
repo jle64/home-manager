@@ -34,6 +34,9 @@ layout {
         place-within-column
     }
 }
+overview {
+    backdrop-color "#26233a"
+}
 spawn-at-startup "qs" "-c" "noctalia-shell"
 prefer-no-csd
 screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -477,10 +480,6 @@ window-rule {
 }
 layer-rule {
     match namespace="^quickshell$"
-    place-within-backdrop true
-}
-layer-rule {
-    match namespace="^noctalia-overview*"
     place-within-backdrop true
 }
 include "./noctalia.kdl"

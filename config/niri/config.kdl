@@ -37,8 +37,7 @@ layout {
 overview {
     backdrop-color "#26233a"
 }
-//handled by service
-//spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 prefer-no-csd
 screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 hotkey-overlay {

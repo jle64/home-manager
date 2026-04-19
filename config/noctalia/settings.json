@@ -51,20 +51,20 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
-        "barType": "framed",
+        "backgroundOpacity": 0.8,
+        "barType": "floating",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
-        "fontScale": 1,
+        "fontScale": 1.2000000000000002,
         "frameRadius": 12,
         "frameThickness": 0,
         "hideOnOverview": true,
         "marginHorizontal": 4,
-        "marginVertical": 4,
+        "marginVertical": 0,
         "middleClickAction": "settings",
         "middleClickCommand": "",
         "middleClickFollowMouse": true,
@@ -84,16 +84,16 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "Montserrat SemiBold",
+                    "customFont": "JetBrainsMonoNL NFP ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
@@ -124,7 +124,7 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
-                    "colorizeSystemIcon": "none",
+                    "colorizeSystemIcon": "primary",
                     "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
@@ -136,14 +136,6 @@
             ],
             "right": [
                 {
-                    "hideWhenZero": true,
-                    "hideWhenZeroUnread": true,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
-                },
-                {
                     "defaultSettings": {
                         "activeColor": "primary",
                         "enableToast": true,
@@ -154,6 +146,14 @@
                         "removeMargins": false
                     },
                     "id": "plugin:privacy-indicator"
+                },
+                {
+                    "hideWhenZero": true,
+                    "hideWhenZeroUnread": true,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 },
                 {
                     "blacklist": [

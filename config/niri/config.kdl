@@ -33,6 +33,13 @@ layout {
         position "top"
         place-within-column
     }
+    focus-ring {
+        on
+        width 4
+        active-gradient from="#09f" to="#0f9" angle=135
+        inactive-gradient from="#555" to="#888" angle=135
+        urgent-gradient from="#900" to="#090" angle=135
+    }
 }
 overview {
     backdrop-color "#26233a"

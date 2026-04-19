@@ -41,7 +41,6 @@ in {
       aria2
       bat
       borgbackup
-      comma
       curl
       devbox
       difftastic
@@ -91,6 +90,11 @@ in {
   };
 
   programs = {
+    nix-index.enable = true;
+    nix-index.enableFishIntegration = true;
+    nix-index.enableBashIntegration = true;
+    nix-index-database.comma.enable = true;
+
     zoxide.enable = true;
     fish.enable = true;
     neovim = {

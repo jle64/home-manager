@@ -408,7 +408,7 @@
         "animationDisabled": false,
         "animationSpeed": 1.5,
         "autoStartAuth": false,
-        "avatarImage": "",
+        "avatarImage": "/var/home/jonathan/Perso/Godzilla Mothra and King Ghidorah Giant Monsters All-Out Attack 2001 1080p BluRay x264-OFT.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "analog",
@@ -465,7 +465,7 @@
         "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
         "smoothScrollEnabled": true,
-        "telemetryEnabled": false
+        "telemetryEnabled": true
     },
     "hooks": {
         "colorGeneration": "",
@@ -499,7 +499,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Zaventem",
+        "name": "Gaillon",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -510,7 +510,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": true,
+        "bluetoothAutoConnect": false,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 60000,
@@ -748,7 +748,7 @@
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",

@@ -203,7 +203,7 @@
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
-                    "middleClickCommand": "wpctl set-mute 50 toggle",
+                    "middleClickCommand": "qs -c noctalia-shell ipc call volume muteOutput",
                     "textColor": "none"
                 },
                 {

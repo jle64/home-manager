@@ -47,6 +47,9 @@ overview {
 spawn-at-startup "qs" "-c" "noctalia-shell"
 prefer-no-csd
 screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
 hotkey-overlay {
     skip-at-startup
 }

@@ -252,7 +252,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -304,8 +304,9 @@
                 },
                 {
                     "defaultSettings": {
+                        "mainDeviceId": ""
                     },
-                    "id": "plugin:kde-connect"
+                    "id": "plugin:valent-connect"
                 },
                 {
                     "defaultSettings": {
@@ -497,7 +498,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Brussels",
+        "name": "Gaillon",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -520,7 +521,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": false,
+        "enabled": true,
         "forced": false,
         "manualSunrise": "08:00",
         "manualSunset": "22:00",
@@ -712,7 +713,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/var/home/jonathan/Images/Wallpapers",
+        "directory": "/var/home/jonathan/.local/share/backgrounds",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [

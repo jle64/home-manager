@@ -5,6 +5,12 @@ input {
         natural-scroll
     }
     focus-follows-mouse max-scroll-amount="33%"
+    keyboard {
+        xkb {
+	    options "ctrl:nocaps"
+	    file ".config/xkb/map"
+        }
+    }
 }
 output "eDP-1" {
     scale 1.0

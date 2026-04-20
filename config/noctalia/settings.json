@@ -92,7 +92,7 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "none",
+                    "clockColor": "secondary",
                     "customFont": "JetBrainsMonoNL NFP ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
@@ -224,12 +224,6 @@
                     "icon": "settings",
                     "id": "ControlCenter",
                     "useDistroLogo": false
-                },
-                {
-                    "defaultSettings": {
-                        "mainDeviceId": ""
-                    },
-                    "id": "plugin:valent-connect"
                 }
             ]
         }

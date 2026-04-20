@@ -1,3 +1,0 @@
-starship 
-starship init
-starship init nu

@@ -52,7 +52,7 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "floating",
+        "barType": "framed",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,

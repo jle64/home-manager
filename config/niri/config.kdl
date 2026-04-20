@@ -7,8 +7,8 @@ input {
     focus-follows-mouse max-scroll-amount="33%"
     keyboard {
         xkb {
-	    options "ctrl:nocaps"
 	    file ".config/xkb/map"
+	    options "ctrl:nocaps"
         }
     }
 }

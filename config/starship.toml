@@ -1,6 +1,6 @@
 format = """
-╭─ $directory$git_branch$git_status $fill $username$hostname$time
-╰$character
+╭─ $directory$git_branch$git_status $fill $shell$username$hostname$time
+╰$character$direnv$python$nix_shell
 """
 
 [fill]
@@ -40,3 +40,16 @@ format = "[$all_status](fg:#030B16 bg:#ffd166)[](fg:#ffd166)"
 
 [line_break]
 disabled = true
+
+[shell]
+disabled = true
+format = "[](fg:#06d6a0)[$indicator](fg:#030B16 bg:#06d6a0)($style)[](fg:#06d6a0)"
+
+[direnv]
+disabled = false
+
+[python]
+disabled = false
+
+[nix_shell]
+disabled = false

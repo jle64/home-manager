@@ -52,7 +52,7 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "framed",
+        "barType": "floating",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
@@ -224,6 +224,12 @@
                     "icon": "settings",
                     "id": "ControlCenter",
                     "useDistroLogo": false
+                },
+                {
+                    "defaultSettings": {
+                        "mainDeviceId": ""
+                    },
+                    "id": "plugin:valent-connect"
                 }
             ]
         }
@@ -252,7 +258,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -301,12 +307,6 @@
                 },
                 {
                     "id": "AirplaneMode"
-                },
-                {
-                    "defaultSettings": {
-                        "mainDeviceId": ""
-                    },
-                    "id": "plugin:valent-connect"
                 },
                 {
                     "defaultSettings": {
@@ -746,13 +746,13 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": false,
+        "useWallhaven": true,
         "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "mononoke",
+        "wallhavenQuery": "kaiju",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "atleast",

@@ -20,7 +20,6 @@
     "kitty"
     "mango"
     "niri"
-    "xkb"
   ];
 
   dirAttrs =

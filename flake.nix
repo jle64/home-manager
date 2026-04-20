@@ -26,17 +26,17 @@
     homeConfigurations."jonathan" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
-      modules = [./base.nix ./cli.nix { home.homeDirectory = "/home/jonathan"; } nix-index-database.hmModules.nix-index];
+      modules = [./base.nix ./cli.nix { home.homeDirectory = "/home/jonathan"; } nix-index-database.homeModules.nix-index];
     };
     homeConfigurations."jonathan@cloud" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
-      modules = [./base.nix ./cli.nix ./desktop.nix { home.homeDirectory = "/var/home/jonathan"; } nix-index-database.hmModules.nix-index];
+      modules = [./base.nix ./cli.nix ./desktop.nix { home.homeDirectory = "/var/home/jonathan"; } nix-index-database.homeModules.nix-index];
     };
     homeConfigurations."jonathan@sephiroth" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
-      modules = [./base.nix ./cli.nix ./desktop.nix ./gaming.nix ./gnome.nix { home.homeDirectory = "/var/home/jonathan"; } nix-index-database.hmModules.nix-index];
+      modules = [./base.nix ./cli.nix ./desktop.nix ./gaming.nix ./gnome.nix { home.homeDirectory = "/var/home/jonathan"; } nix-index-database.homeModules.nix-index];
     };
   };
 }

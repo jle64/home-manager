@@ -7,8 +7,6 @@ input {
     focus-follows-mouse max-scroll-amount="33%"
     keyboard {
         xkb {
-            layout "fr,fr"
-            variant "oss,us"
 	    options "ctrl:nocaps"
         }
     }

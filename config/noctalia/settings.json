@@ -51,8 +51,8 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.8,
-        "barType": "floating",
+        "backgroundOpacity": 1,
+        "barType": "framed",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
@@ -61,7 +61,7 @@
         "enableExclusionZoneInset": false,
         "fontScale": 1.2000000000000002,
         "frameRadius": 12,
-        "frameThickness": 0,
+        "frameThickness": 5,
         "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,
@@ -95,7 +95,7 @@
                     "clockColor": "none",
                     "customFont": "JetBrainsMonoNL NFP ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
+                    "formatVertical": "HH mm",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": true
@@ -105,13 +105,13 @@
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
-                    "emptyColor": "secondary",
+                    "emptyColor": "tertiary",
                     "enableScrollWheel": true,
                     "focusedColor": "none",
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
-                    "hideUnoccupied": true,
+                    "hideUnoccupied": false,
                     "iconScale": 0.5,
                     "id": "Workspace",
                     "labelMode": "none",
@@ -127,7 +127,7 @@
                     "colorizeSystemIcon": "primary",
                     "colorizeSystemText": "none",
                     "customIconPath": "",
-                    "enableColorization": false,
+                    "enableColorization": true,
                     "icon": "pokeball",
                     "iconColor": "none",
                     "id": "Launcher",
@@ -208,7 +208,7 @@
                 },
                 {
                     "deviceNativePath": "__default__",
-                    "displayMode": "icon-only",
+                    "displayMode": "icon-hover",
                     "hideIfIdle": true,
                     "hideIfNotDetected": true,
                     "id": "Battery",
@@ -252,15 +252,15 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Naysayer",
+        "predefinedScheme": "Ayu",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -521,7 +521,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "08:00",
         "manualSunset": "22:00",
@@ -688,14 +688,14 @@
             },
             {
                 "enabled": true,
-                "id": "gtk"
+                "id": "starship"
             },
             {
                 "enabled": true,
-                "id": "starship"
+                "id": "gtk"
             }
         ],
-        "enableUserTheming": true
+        "enableUserTheming": false
     },
     "ui": {
         "boxBorderEnabled": true,

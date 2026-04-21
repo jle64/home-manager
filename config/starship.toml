@@ -43,15 +43,16 @@ disabled = true
 
 [shell]
 disabled = false
+format = "$indicator"
 
 [direnv]
 disabled = false
-format = "env $loaded"
+format = " direnv $loaded"
 
 [python]
 disabled = false
-format = "py $virtualenv"
+format = " py $version $virtualenv"
 
 [nix_shell]
 disabled = false
-format = "nix $name$state"
+format = " nix $name$state"

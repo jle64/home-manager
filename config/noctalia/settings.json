@@ -92,13 +92,13 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "secondary",
+                    "clockColor": "primary",
                     "customFont": "JetBrainsMonoNL NFP ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": true
+                    "useCustomFont": false
                 }
             ],
             "left": [
@@ -260,7 +260,7 @@
         "predefinedScheme": "Ayu",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -301,6 +301,12 @@
                 },
                 {
                     "id": "AirplaneMode"
+                },
+                {
+                    "defaultSettings": {
+                        "mainDeviceId": ""
+                    },
+                    "id": "plugin:valent-connect"
                 },
                 {
                     "defaultSettings": {
@@ -401,7 +407,7 @@
         "animationDisabled": false,
         "animationSpeed": 1.5,
         "autoStartAuth": false,
-        "avatarImage": "",
+        "avatarImage": "~/.local/share/face",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "analog",
@@ -687,6 +693,10 @@
             {
                 "enabled": true,
                 "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "pywalfox"
             }
         ],
         "enableUserTheming": false

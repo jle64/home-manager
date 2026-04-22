@@ -51,12 +51,12 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.85,
+        "backgroundOpacity": 1,
         "barType": "floating",
         "capsuleColorKey": "tertiary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
-        "density": "comfortable",
+        "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
         "fontScale": 1.2000000000000002,
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,

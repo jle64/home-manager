@@ -51,12 +51,12 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
-        "barType": "framed",
-        "capsuleColorKey": "primary",
+        "backgroundOpacity": 0.85,
+        "barType": "floating",
+        "capsuleColorKey": "tertiary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
-        "density": "default",
+        "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
         "fontScale": 1.2000000000000002,
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,
@@ -92,7 +92,7 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "primary",
+                    "clockColor": "none",
                     "customFont": "JetBrainsMonoNL NFP ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
@@ -111,7 +111,7 @@
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
-                    "hideUnoccupied": false,
+                    "hideUnoccupied": true,
                     "iconScale": 0.5,
                     "id": "Workspace",
                     "labelMode": "none",

@@ -493,4 +493,4 @@ layer-rule {
     place-within-backdrop true
 }
 include "./noctalia.kdl"
-include "./burn-multicolor.kdl"
+include "./animations.kdl"

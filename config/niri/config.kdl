@@ -4,6 +4,13 @@ input {
         tap
         natural-scroll
     }
+    keyboard {
+        xkb {
+            layout "fr,fr"
+            variant "oss,us"
+            options "ctrl:nocaps"
+        }
+    }
     focus-follows-mouse max-scroll-amount="33%"
 }
 output "eDP-1" {

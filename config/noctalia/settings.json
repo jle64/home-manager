@@ -28,7 +28,7 @@
             "info.febvre.Komikku",
             "be.alexandervanhee.gradia"
         ],
-        "position": "center",
+        "position": "follow_bar",
         "screenshotAnnotationTool": "gradia",
         "showCategories": true,
         "showIconBackground": false,
@@ -252,7 +252,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -723,7 +723,7 @@
         "favorites": [
         ],
         "fillColor": "#000000",
-        "fillMode": "crop",
+        "fillMode": "repeat",
         "hideWallpaperFilenames": false,
         "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
@@ -731,7 +731,7 @@
         "overviewBlur": 0.4,
         "overviewEnabled": false,
         "overviewTint": 0.6,
-        "panelPosition": "follow_bar",
+        "panelPosition": "center",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
@@ -756,11 +756,11 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "kaiju",
+        "wallhavenQuery": "",
         "wallhavenRatios": "landscape",
-        "wallhavenResolutionHeight": "1080",
+        "wallhavenResolutionHeight": "1440",
         "wallhavenResolutionMode": "atleast",
-        "wallhavenResolutionWidth": "1920",
+        "wallhavenResolutionWidth": "3440",
         "wallhavenSorting": "favorites",
         "wallpaperChangeMode": "random"
     }

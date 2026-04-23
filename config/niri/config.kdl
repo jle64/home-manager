@@ -452,6 +452,15 @@ binds {
     Mod+T {
         toggle-column-tabbed-display
     }
+    Mod+D {
+        set-dynamic-cast-window
+    }
+    Mod+ALt+D {
+        set-dynamic-cast-monitor
+    }
+    Mod+Shift+D {
+        clear-dynamic-cast-target
+    }
     Mod+X {
         switch-layout "next"
     }

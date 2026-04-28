@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -28,10 +28,10 @@
             "info.febvre.Komikku",
             "be.alexandervanhee.gradia"
         ],
-        "position": "follow_bar",
+        "position": "center",
         "screenshotAnnotationTool": "gradia",
         "showCategories": true,
-        "showIconBackground": false,
+        "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "kitty",
         "viewMode": "grid"
@@ -54,7 +54,7 @@
         "backgroundOpacity": 0.9,
         "barType": "floating",
         "capsuleColorKey": "tertiary",
-        "capsuleOpacity": 0.7000000000000001,
+        "capsuleOpacity": 0.2,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
@@ -92,26 +92,16 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "none",
+                    "clockColor": "primary",
                     "customFont": "Noto Sans ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": true
+                    "useCustomFont": false
                 }
             ],
             "left": [
-                {
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "pokeball",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
-                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -252,12 +242,12 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Dracula",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -367,23 +357,23 @@
     },
     "dock": {
         "animationSpeed": 1,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.45,
         "colorizeIcons": false,
-        "deadOpacity": 0.6,
+        "deadOpacity": 0.55,
         "displayMode": "auto_hide",
         "dockType": "floating",
-        "enabled": false,
+        "enabled": true,
         "floatingRatio": 1,
         "groupApps": false,
         "groupClickAction": "cycle",
         "groupContextMenuMode": "extended",
         "groupIndicatorStyle": "dots",
-        "inactiveIndicators": true,
+        "inactiveIndicators": false,
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
-        "launcherIcon": "paw",
-        "launcherIconColor": "none",
+        "launcherIcon": "pokeball",
+        "launcherIconColor": "tertiary",
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,
         "monitors": [
@@ -397,9 +387,9 @@
         "pinnedStatic": true,
         "position": "bottom",
         "showDockIndicator": false,
-        "showLauncherIcon": false,
+        "showLauncherIcon": true,
         "sitOnFrame": true,
-        "size": 2
+        "size": 1
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
@@ -456,9 +446,9 @@
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 0.5,
-        "shadowDirection": "bottom",
+        "shadowDirection": "center",
         "shadowOffsetX": 0,
-        "shadowOffsetY": 3,
+        "shadowOffsetY": 0,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
         "showScreenCorners": true,
@@ -702,12 +692,12 @@
         "enableUserTheming": false
     },
     "ui": {
-        "boxBorderEnabled": true,
+        "boxBorderEnabled": false,
         "fontDefault": "Sans Serif",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.9500000000000001,
+        "panelBackgroundOpacity": 0.45,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",

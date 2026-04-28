@@ -525,6 +525,18 @@ window-rule {
     match app-id="org.quickshell$"
     open-floating true
 }
+window-rule {
+  background-effect {
+    blur true
+    xray false
+  }
+}
+layer-rule {
+  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  background-effect {
+    xray false
+  }
+}
 layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true

@@ -11,8 +11,12 @@
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
+        "color-scheme-creator": {
+            "enabled": false,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
         "custom-commands": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "giphy-search": {
@@ -20,6 +24,10 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "kaomoji-provider": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "niri-workspaces": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },

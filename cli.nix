@@ -106,7 +106,7 @@ in {
       defaultEditor = true;
     };
     skim.enableFishIntegration = true;
-    starship.enable = true;
+#    starship.enable = true;
     git = import lib/git.nix;
   };
 }

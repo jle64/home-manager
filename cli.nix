@@ -16,7 +16,7 @@
     ".config/fish/functions" = "fish/functions";
     ".config/fish/fish_plugins" = "fish/fish_plugins";
     ".config/nvim/init.lua" = "nvim/init.lua";
-    ".config/starship.toml" = "starship.toml";
+ #   ".config/starship.toml" = "starship.toml";
   };
 
   fileAttrs =
@@ -75,7 +75,7 @@ in {
       rsync
       shellcheck
       skim
-      starship
+#      starship
       testssl
       tig
       trash-cli

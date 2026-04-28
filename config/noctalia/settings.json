@@ -53,8 +53,8 @@
         "autoShowDelay": 150,
         "backgroundOpacity": 0.9,
         "barType": "floating",
-        "capsuleColorKey": "tertiary",
-        "capsuleOpacity": 0.2,
+        "capsuleColorKey": "primary",
+        "capsuleOpacity": 0.45,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
@@ -92,7 +92,7 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "primary",
+                    "clockColor": "none",
                     "customFont": "Noto Sans ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
@@ -243,14 +243,14 @@
     },
     "colorSchemes": {
         "darkMode": false,
-        "generationMethod": "rainbow",
+        "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
         "predefinedScheme": "Dracula",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [

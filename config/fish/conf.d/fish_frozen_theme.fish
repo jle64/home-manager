@@ -5,41 +5,41 @@
 #     man fish-interactive | less +/^SYNTAX.HIGHLIGHTING
 # for appropriate commands to add to ~/.config/fish/config.fish instead.
 
-set --global fish_color_autosuggestion 6272a4
-set --global fish_color_cancel ff5555 --reverse
-set --global fish_color_command 8be9fd
-set --global fish_color_comment 6272a4
-set --global fish_color_cwd 50fa7b
+set --global fish_color_autosuggestion 8e908c
+set --global fish_color_cancel --reverse
+set --global fish_color_command 8959a8
+set --global fish_color_comment eab700
+set --global fish_color_cwd green
 set --global fish_color_cwd_root red
-set --global fish_color_end ffb86c
-set --global fish_color_error ff5555
-set --global fish_color_escape ff79c6
+set --global fish_color_end 8959a8
+set --global fish_color_error c82829
+set --global fish_color_escape 00a6b2
 set --global fish_color_gray 
 set --global fish_color_history_current --bold
-set --global fish_color_host bd93f9
-set --global fish_color_host_remote bd93f9
-set --global fish_color_keyword ff79c6
-set --global fish_color_normal f8f8f2
-set --global fish_color_operator 50fa7b
-set --global fish_color_option ffb86c
-set --global fish_color_param bd93f9
-set --global fish_color_quote f1fa8c
-set --global fish_color_redirection f8f8f2
-set --global fish_color_search_match --bold --background=44475a
-set --global fish_color_selection --bold --background=44475a
-set --global fish_color_status ff5555
-set --global fish_color_user 8be9fd
+set --global fish_color_host --reset
+set --global fish_color_host_remote yellow
+set --global fish_color_keyword 
+set --global fish_color_normal --reset
+set --global fish_color_operator 00a6b2
+set --global fish_color_option 
+set --global fish_color_param 4271ae
+set --global fish_color_quote 718c00
+set --global fish_color_redirection 3e999f
+set --global fish_color_search_match white --bold --background=brblack
+set --global fish_color_selection white --bold --background=brblack
+set --global fish_color_status red
+set --global fish_color_user brgreen
 set --global fish_color_valid_path --underline=single
 set --global fish_pager_color_background 
-set --global fish_pager_color_completion f8f8f2
-set --global fish_pager_color_description 6272a4
-set --global fish_pager_color_prefix 8be9fd
-set --global fish_pager_color_progress 6272a4
+set --global fish_pager_color_completion --reset
+set --global fish_pager_color_description B3A06D
+set --global fish_pager_color_prefix --bold --underline=single
+set --global fish_pager_color_progress brwhite --bold --background=cyan
 set --global fish_pager_color_secondary_background 
-set --global fish_pager_color_secondary_completion f8f8f2
-set --global fish_pager_color_secondary_description 6272a4
-set --global fish_pager_color_secondary_prefix 8be9fd
-set --global fish_pager_color_selected_background --background=44475a
-set --global fish_pager_color_selected_completion f8f8f2
-set --global fish_pager_color_selected_description 6272a4
-set --global fish_pager_color_selected_prefix 8be9fd
+set --global fish_pager_color_secondary_completion 
+set --global fish_pager_color_secondary_description 
+set --global fish_pager_color_secondary_prefix 
+set --global fish_pager_color_selected_background --background=brblack
+set --global fish_pager_color_selected_completion 
+set --global fish_pager_color_selected_description 
+set --global fish_pager_color_selected_prefix 

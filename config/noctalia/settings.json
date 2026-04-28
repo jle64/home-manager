@@ -51,17 +51,17 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
-        "barType": "simple",
-        "capsuleColorKey": "secondary",
-        "capsuleOpacity": 0.5,
+        "backgroundOpacity": 0.9,
+        "barType": "framed",
+        "capsuleColorKey": "tertiary",
+        "capsuleOpacity": 0.6,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
-        "enableExclusionZoneInset": false,
+        "enableExclusionZoneInset": true,
         "fontScale": 1.2000000000000002,
         "frameRadius": 12,
-        "frameThickness": 5,
+        "frameThickness": 4,
         "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
@@ -87,21 +87,31 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "JetBrainsMonoNL NFP ExtraBold",
+                    "customFont": "Noto Sans ExtraBold",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "useCustomFont": true
                 }
             ],
             "left": [
+                {
+                    "colorizeSystemIcon": "primary",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "pokeball",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": false
+                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -122,16 +132,6 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
-                },
-                {
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "pokeball",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
                 }
             ],
             "right": [
@@ -252,7 +252,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",

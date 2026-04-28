@@ -51,8 +51,8 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.7000000000000001,
-        "barType": "framed",
+        "backgroundOpacity": 0.9,
+        "barType": "simple",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.45,
         "contentPadding": 2,

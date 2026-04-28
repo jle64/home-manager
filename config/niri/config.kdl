@@ -8,7 +8,6 @@ input {
         xkb {
             layout "fr,fr"
             variant "oss,us"
-            options "ctrl:nocaps"
         }
     }
     focus-follows-mouse max-scroll-amount="33%"
@@ -17,7 +16,7 @@ output "eDP-1" {
     scale 1.0
 }
 layout {
-    gaps 4
+    gaps 8
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -52,7 +51,6 @@ overview {
     backdrop-color "#26233a"
 }
 spawn-at-startup "qs" "-c" "noctalia-shell"
-prefer-no-csd
 screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 debug {
     honor-xdg-activation-with-invalid-serial
@@ -64,16 +62,11 @@ animations {
     slowdown 0.6
 }
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 12
     clip-to-geometry true
 }
 window-rule {
     match app-id="^org\\.gnome\\."
-    draw-border-with-background false
-    geometry-corner-radius 8
-    clip-to-geometry true
-}
-window-rule {
     match app-id="Alacritty"
     match app-id="zen"
     match app-id="com.mitchellh.ghostty"
@@ -495,14 +488,41 @@ binds {
     Mod+Shift+X {
         switch-layout "prev"
     }
+    F10 {
+        screenshot
+    }
+    Shift+F10 {
+        screenshot show-pointer=true
+    }
+    Mod+F10 {
+        screenshot-screen
+    }
+    Mod+Shift+F10 {
+        screenshot-screen show-pointer=true
+    }
+    Alt+F10 {
+        screenshot-window
+    }
+    Alt+Shift+F10 {
+        screenshot-window show-pointer=true
+    }
     Print {
         screenshot
+    }
+    Shift+Print {
+        screenshot show-pointer=true
     }
     Mod+Print {
         screenshot-screen
     }
+    Mod+Shift+Print {
+        screenshot-screen show-pointer=true
+    }
     Alt+Print {
         screenshot-window
+    }
+    Alt+Shift+Print {
+        screenshot-window show-pointer=true
     }
     Mod+Escape allow-inhibiting=false {
         toggle-keyboard-shortcuts-inhibit
@@ -518,7 +538,7 @@ binds {
     }
 }
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 12
     clip-to-geometry true
 }
 window-rule {
@@ -526,16 +546,17 @@ window-rule {
     open-floating true
 }
 window-rule {
-  background-effect {
-    blur true
-    xray false
-  }
+    //opacity 0.97
+    background-effect {
+        blur true
+        xray true
+    }
 }
 layer-rule {
-  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
-  background-effect {
-    xray false
-  }
+    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+    background-effect {
+        xray false
+    }
 }
 layer-rule {
     match namespace="^quickshell$"

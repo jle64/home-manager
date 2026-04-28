@@ -52,9 +52,9 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 0.9,
-        "barType": "framed",
+        "barType": "floating",
         "capsuleColorKey": "tertiary",
-        "capsuleOpacity": 0.6,
+        "capsuleOpacity": 0.7000000000000001,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
@@ -257,10 +257,10 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Ayu",
+        "predefinedScheme": "Catppuccin",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [

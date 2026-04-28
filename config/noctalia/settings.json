@@ -51,15 +51,15 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.9,
-        "barType": "floating",
+        "backgroundOpacity": 0.7000000000000001,
+        "barType": "framed",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.45,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1.2000000000000002,
+        "fontScale": 1.35,
         "frameRadius": 12,
         "frameThickness": 4,
         "hideOnOverview": true,
@@ -87,7 +87,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -242,7 +242,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",

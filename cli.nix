@@ -60,6 +60,8 @@ in {
       jj
       jq
       just
+      kubectl
+      kubernetes-helm
       lftp
       lnav
       ncdu
@@ -75,7 +77,6 @@ in {
       rsync
       shellcheck
       skim
-#      starship
       testssl
       tig
       trash-cli

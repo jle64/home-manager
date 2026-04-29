@@ -543,7 +543,6 @@ window-rule {
     open-floating true
 }
 window-rule {
-    match app-id="kitty"
     opacity 0.9
     background-effect {
         blur true

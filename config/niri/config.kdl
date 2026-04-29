@@ -62,39 +62,6 @@ hotkey-overlay {
 animations {
     slowdown 0.6
 }
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
-window-rule {
-    match app-id="^org\\.gnome\\."
-    match app-id="Alacritty"
-    match app-id="zen"
-    match app-id="com.mitchellh.ghostty"
-    match app-id="kitty"
-    draw-border-with-background false
-}
-window-rule {
-    match is-window-cast-target=true
-
-    focus-ring {
-        active-color "#f38ba8"
-        inactive-color "#7d0d2d"
-    }
-
-    border {
-        inactive-color "#7d0d2d"
-    }
-
-    shadow {
-        color "#7d0d2d70"
-    }
-
-    tab-indicator {
-        active-color "#f38ba8"
-        inactive-color "#7d0d2d"
-    }
-}
 binds {
     Mod+Shift+Slash {
         show-hotkey-overlay
@@ -543,11 +510,41 @@ window-rule {
     clip-to-geometry true
 }
 window-rule {
+    match app-id="^org\\.gnome\\."
+    match app-id="Alacritty"
+    match app-id="zen"
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
+    draw-border-with-background false
+}
+window-rule {
+    match is-window-cast-target=true
+
+    focus-ring {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+
+    border {
+        inactive-color "#7d0d2d"
+    }
+
+    shadow {
+        color "#7d0d2d70"
+    }
+
+    tab-indicator {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+}
+window-rule {
     match app-id="org.quickshell$"
     open-floating true
 }
 window-rule {
-    //opacity 0.97
+    match app-id="kitty"
+    opacity 0.9
     background-effect {
         blur true
         xray true

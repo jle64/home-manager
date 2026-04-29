@@ -18,7 +18,7 @@ output "eDP-1" {
     scale 1.0
 }
 layout {
-    gaps 8
+    gaps 12
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -36,7 +36,7 @@ layout {
     }
     tab-indicator {
         width 12
-        gap 8
+        gap 12
         length total-proportion=0.8
         position "top"
         place-within-column
@@ -44,9 +44,9 @@ layout {
     focus-ring {
         on
         width 4
-        active-gradient from="#09f" to="#0f9" angle=135
-        inactive-gradient from="#555" to="#888" angle=135
-        urgent-gradient from="#900" to="#090" angle=135
+        active-gradient from="#99f" to="#9f9" angle=45
+        inactive-gradient from="#555" to="#888" angle=45
+        urgent-gradient from="#900" to="#090" angle=45
     }
 }
 overview {

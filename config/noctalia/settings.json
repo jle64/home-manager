@@ -51,8 +51,8 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.9,
-        "barType": "simple",
+        "backgroundOpacity": 0.7000000000000001,
+        "barType": "floating",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.45,
         "contentPadding": 2,
@@ -63,8 +63,8 @@
         "frameRadius": 12,
         "frameThickness": 4,
         "hideOnOverview": true,
-        "marginHorizontal": 4,
-        "marginVertical": 4,
+        "marginHorizontal": 8,
+        "marginVertical": 8,
         "middleClickAction": "settings",
         "middleClickCommand": "",
         "middleClickFollowMouse": true,
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,

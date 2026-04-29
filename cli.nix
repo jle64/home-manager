@@ -75,6 +75,7 @@ in {
       rclone
       ripgrep
       rsync
+      sassc
       shellcheck
       skim
       testssl

@@ -290,13 +290,24 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "AirplaneMode"
-                },
-                {
                     "defaultSettings": {
                         "mainDeviceId": ""
                     },
                     "id": "plugin:valent-connect"
+                },
+                {
+                    "id": "AirplaneMode"
+                }
+            ],
+            "right": [
+                {
+                    "id": "NightLight"
+                },
+                {
+                    "id": "DarkMode"
+                },
+                {
+                    "id": "WallpaperSelector"
                 },
                 {
                     "defaultSettings": {
@@ -321,23 +332,6 @@
                         "videoSource": "portal"
                     },
                     "id": "plugin:screen-recorder"
-                }
-            ],
-            "right": [
-                {
-                    "id": "PowerProfile"
-                },
-                {
-                    "id": "NightLight"
-                },
-                {
-                    "id": "KeepAwake"
-                },
-                {
-                    "id": "DarkMode"
-                },
-                {
-                    "id": "WallpaperSelector"
                 }
             ]
         }

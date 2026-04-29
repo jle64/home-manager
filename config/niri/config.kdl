@@ -1,4 +1,6 @@
 // See https://yalter.github.io/niri/Configuration:-Introduction
+include "./noctalia.kdl"
+include "./animations.kdl"
 input {
     touchpad {
         tap
@@ -559,5 +561,3 @@ layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
 }
-include "./noctalia.kdl"
-include "./animations.kdl"

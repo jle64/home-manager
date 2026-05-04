@@ -57,8 +57,9 @@ in {
       fishPlugins.git-abbr
       fzf
       gron
-      jj
+      jjui
       jq
+      jujutsu
       just
       kubectl
       kubernetes-helm

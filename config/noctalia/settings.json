@@ -51,9 +51,9 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.9,
+        "backgroundOpacity": 0.75,
         "barType": "floating",
-        "capsuleColorKey": "secondary",
+        "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
         "density": "default",
@@ -677,10 +677,6 @@
             {
                 "enabled": true,
                 "id": "gtk"
-            },
-            {
-                "enabled": true,
-                "id": "pywalfox"
             }
         ],
         "enableUserTheming": false
@@ -740,7 +736,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "abs",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1440",
         "wallhavenResolutionMode": "atleast",

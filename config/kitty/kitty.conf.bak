@@ -53,7 +53,7 @@ initial_window_width 80c
 initial_window_height 25c
 tab_bar_style powerline
 allow_remote_control yes
-# wayland_titlebar_color #0e1419
+wayland_titlebar_color #0e1419
 
 # hyperlinks
 allow_hyperlinks ask

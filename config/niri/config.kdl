@@ -446,7 +446,7 @@ binds {
     Mod+D {
         set-dynamic-cast-window
     }
-    Mod+ALt+D {
+    Mod+Alt+D {
         set-dynamic-cast-monitor
     }
     Mod+Shift+D {
@@ -510,6 +510,11 @@ binds {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+    opacity 0.9
+    background-effect {
+        blur true
+        xray true
+    }
 }
 window-rule {
     match app-id="^org\\.gnome\\."
@@ -527,14 +532,6 @@ window-rule {
         inactive-color "#7d0d2d"
     }
 
-    border {
-        inactive-color "#7d0d2d"
-    }
-
-    shadow {
-        color "#7d0d2d70"
-    }
-
     tab-indicator {
         active-color "#f38ba8"
         inactive-color "#7d0d2d"
@@ -543,13 +540,6 @@ window-rule {
 window-rule {
     match app-id="org.quickshell$"
     open-floating true
-}
-window-rule {
-    opacity 0.9
-    background-effect {
-        blur true
-        xray true
-    }
 }
 layer-rule {
     match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"

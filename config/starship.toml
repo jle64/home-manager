@@ -1,5 +1,5 @@
 format = """
-╭─ $directory$git_branch$git_status $fill $shell$direnv$python$nix_shell $fill $username$hostname$time
+╭─ $directory$git_branch$git_status $fill $direnv$nix_shell $fill $username$hostname$shell
 ╰$character
 """
 
@@ -21,11 +21,6 @@ format = "[](fg:#06d6a0)[ $user](fg:#030B16 bg:#06d6a0)($style)[](fg:#0
 format = "[](fg:#118ab2)[ $hostname](fg:#030B16 bg:#118ab2)[](fg:#118ab2)"
 ssh_only = false
 
-[time]
-disabled = false
-time_format = "%R"
-format = "[](fg:#073b4c)[󱑍 $time](fg:#030B16 bg:#073b4c)[](fg:#073b4c)"
-
 [directory]
 fish_style_pwd_dir_length = 1
 read_only = "󰌾 "
@@ -43,7 +38,7 @@ disabled = true
 
 [shell]
 disabled = false
-format = "$indicator"
+format = "[](fg:#073b4c)[󱆃 $indicator](fg:#030B16 bg:#073b4c)[](fg:#073b4c)"
 
 [direnv]
 disabled = false

@@ -16,7 +16,7 @@
     ".config/fish/functions" = "fish/functions";
     ".config/fish/fish_plugins" = "fish/fish_plugins";
     ".config/nvim/init.lua" = "nvim/init.lua";
- #   ".config/starship.toml" = "starship.toml";
+    ".config/starship.toml" = "starship.toml";
   };
 
   fileAttrs =
@@ -109,7 +109,7 @@ in {
       defaultEditor = true;
     };
     skim.enableFishIntegration = true;
-#    starship.enable = true;
+    starship.enable = true;
     git = import lib/git.nix;
   };
 }

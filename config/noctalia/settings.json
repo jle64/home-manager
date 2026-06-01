@@ -428,7 +428,7 @@
             ]
         },
         "language": "",
-        "lockOnSuspend": true,
+        "lockOnSuspend": false,
         "lockScreenAnimations": true,
         "lockScreenBlur": 0.25,
         "lockScreenCountdownDuration": 5000,
@@ -672,11 +672,11 @@
             },
             {
                 "enabled": true,
-                "id": "starship"
+                "id": "gtk"
             },
             {
                 "enabled": true,
-                "id": "gtk"
+                "id": "starship"
             }
         ],
         "enableUserTheming": false
@@ -730,7 +730,7 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
+        "useWallhaven": false,
         "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",

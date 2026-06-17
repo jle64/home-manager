@@ -166,12 +166,6 @@
                     "id": "plugin:clipper"
                 },
                 {
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "VPN",
-                    "textColor": "none"
-                },
-                {
                     "defaultSettings": {
                         "compactMode": false,
                         "defaultPeerAction": "copy-ip",
@@ -383,7 +377,7 @@
         "showDockIndicator": false,
         "showLauncherIcon": true,
         "sitOnFrame": true,
-        "size": 1
+        "size": 1.8
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
@@ -472,7 +466,7 @@
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
         "screenOffCommand": "",
-        "screenOffTimeout": 600,
+        "screenOffTimeout": 0,
         "suspendCommand": "",
         "suspendTimeout": 0
     },

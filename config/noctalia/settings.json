@@ -87,7 +87,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -236,7 +236,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -345,7 +345,7 @@
     },
     "dock": {
         "animationSpeed": 1,
-        "backgroundOpacity": 0.45,
+        "backgroundOpacity": 0.5,
         "colorizeIcons": false,
         "deadOpacity": 0.55,
         "displayMode": "auto_hide",
@@ -390,11 +390,11 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "analog",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.3,
-        "enableBlurBehind": true,
+        "dimmerOpacity": 0.4,
+        "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
-        "enableShadows": true,
+        "enableShadows": false,
         "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
@@ -681,13 +681,13 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.45,
+        "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": true
+        "translucentWidgets": false
     },
     "wallpaper": {
         "automationEnabled": false,

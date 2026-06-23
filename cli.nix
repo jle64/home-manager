@@ -15,7 +15,6 @@
     ".config/fish/conf.d" = "fish/conf.d";
     ".config/fish/functions" = "fish/functions";
     ".config/fish/fish_plugins" = "fish/fish_plugins";
-    ".config/nvim/init.lua" = "nvim/init.lua";
     ".config/starship.toml" = "starship.toml";
   };
 
@@ -115,9 +114,13 @@ in {
       vimAlias = true;
       vimdiffAlias = true;
       defaultEditor = true;
+      withRuby = false;
+      withPython3 = false;
     };
     skim.enableFishIntegration = true;
     starship.enable = true;
     git = import lib/git.nix;
   };
+
+  xdg.configFile."nvim/init.lua".source = lib.mkForce (config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/config/nvim/init.lua");
 }

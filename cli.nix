@@ -57,16 +57,22 @@ in {
       fishPlugins.git-abbr
       fzf
       gron
+      htop
+      ipcalc
       jjui
       jq
       jujutsu
       just
+      krew
       kubectl
+      kubectx
       kubernetes-helm
       lftp
       lnav
+      mtr
       ncdu
       nmap
+      notmuch
       nushell
       nushellPlugins.skim
       pandoc
@@ -77,8 +83,10 @@ in {
       ripgrep
       rsync
       sassc
+      senpai
       shellcheck
       skim
+      strace
       testssl
       tig
       trash-cli

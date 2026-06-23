@@ -237,7 +237,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -730,7 +730,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "sun",
+        "wallhavenQuery": "mana",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1440",
         "wallhavenResolutionMode": "atleast",

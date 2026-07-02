@@ -510,6 +510,7 @@ binds {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+    open-floating false
 }
 window-rule {
     match app-id="Alacritty"

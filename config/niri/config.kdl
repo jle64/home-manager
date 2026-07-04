@@ -53,7 +53,7 @@ overview {
     backdrop-color "#26233a"
 }
 spawn-at-startup "qs" "-c" "noctalia-shell"
-screenshot-path "~/Images/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Images/Screenshots/%Y-%m-%d %H-%M-%S.png"
 prefer-no-csd
 debug {
     honor-xdg-activation-with-invalid-serial
@@ -71,8 +71,23 @@ binds {
     Mod+Shift+Comma {
         show-hotkey-overlay
     }
-    Mod+Return hotkey-overlay-title="Open a Terminal" {
-        spawn "kitty"
+    Mod+Escape allow-inhibiting=false {
+        toggle-keyboard-shortcuts-inhibit
+    }
+    Mod+Shift+E {
+        quit
+    }
+    Ctrl+Alt+Delete {
+        quit
+    }
+    Mod+Shift+P {
+        power-off-monitors
+    }
+    Mod+Shift+S hotkey-overlay-title="Suspend" {
+        spawn "systemctl" "suspend" "-i"
+    }
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" {
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"
     }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"
@@ -83,11 +98,8 @@ binds {
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle"
     }
-    Mod+S hotkey-overlay-title="Settings" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"
-    }
-    Mod+Shift+N hotkey-overlay-title="Notification Center" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"
+    Mod+Return hotkey-overlay-title="Open a Terminal" {
+        spawn "kitty"
     }
     Mod+N hotkey-overlay-title="Nautilus" {
         spawn "nautilus"
@@ -101,8 +113,11 @@ binds {
     Mod+E hotkey-overlay-title="Text Editor" {
         spawn "flatpak" "run" "org.gnome.TextEditor"
     }
-    Mod+Alt+L hotkey-overlay-title="Lock Screen" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"
+    Mod+TouchpadScrollDown {
+        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%-"
+    }
+    Mod+TouchpadScrollUp {
+        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+"
     }
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+"
@@ -317,12 +332,6 @@ binds {
     Alt+Ctrl+WheelScrollUp {
         move-column-left
     }
-    Mod+TouchpadScrollDown {
-        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%-"
-    }
-    Mod+TouchpadScrollUp {
-        spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "3%+"
-    }
     Mod+1 {
         focus-workspace 1
     }
@@ -493,18 +502,6 @@ binds {
     }
     Alt+Shift+Print {
         screenshot-window show-pointer=true
-    }
-    Mod+Escape allow-inhibiting=false {
-        toggle-keyboard-shortcuts-inhibit
-    }
-    Mod+Shift+E {
-        quit
-    }
-    Ctrl+Alt+Delete {
-        quit
-    }
-    Mod+Shift+P {
-        power-off-monitors
     }
 }
 window-rule {

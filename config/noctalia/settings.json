@@ -52,14 +52,14 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 0.25,
-        "barType": "floating",
+        "barType": "simple",
         "capsuleColorKey": "primary",
         "capsuleOpacity": 0.5,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
-        "enableExclusionZoneInset": true,
-        "fontScale": 1.35,
+        "enableExclusionZoneInset": false,
+        "fontScale": 1.2000000000000002,
         "frameRadius": 12,
         "frameThickness": 4,
         "hideOnOverview": true,
@@ -72,7 +72,7 @@
         ],
         "mouseWheelAction": "workspace",
         "mouseWheelWrap": false,
-        "outerCorners": false,
+        "outerCorners": true,
         "position": "left",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
@@ -84,7 +84,7 @@
                 "name": "eDP-1"
             }
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
@@ -93,12 +93,12 @@
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "Noto Sans ExtraBold",
+                    "customFont": "UbuntuSans NFP SemiBold",
                     "formatHorizontal": "HH:mm",
                     "formatVertical": "HH mm",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "useCustomFont": true
                 }
             ],
             "left": [
@@ -236,15 +236,15 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
-        "generationMethod": "rainbow",
+        "darkMode": false,
+        "generationMethod": "vibrant",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Dracula",
+        "predefinedScheme": "Rose Pine Moon",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -391,10 +391,10 @@
         "clockStyle": "analog",
         "compactLockScreen": false,
         "dimmerOpacity": 0.4,
-        "enableBlurBehind": false,
+        "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
-        "enableShadows": false,
+        "enableShadows": true,
         "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
@@ -681,13 +681,13 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 1,
+        "panelBackgroundOpacity": 0.75,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,
@@ -724,13 +724,13 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": false,
+        "useWallhaven": true,
         "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "mana",
+        "wallhavenQuery": "",
         "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "1440",
         "wallhavenResolutionMode": "atleast",

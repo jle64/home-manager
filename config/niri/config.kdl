@@ -504,20 +504,26 @@ binds {
         screenshot-window show-pointer=true
     }
 }
+blur {
+    passes 3
+    offset 1.0
+    noise 0.1
+    saturation 1.0
+}
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
     open-floating false
-}
-window-rule {
-    match app-id="Alacritty"
-    match app-id="com.mitchellh.ghostty"
-    match app-id="kitty"
     opacity 0.95
     background-effect {
         blur true
         xray true
     }
+}
+window-rule {
+    match app-id="Alacritty"
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
 }
 window-rule {
     match app-id="^org\\.gnome\\."

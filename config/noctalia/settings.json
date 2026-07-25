@@ -241,7 +241,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Rose Pine Moon",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -666,11 +666,11 @@
             },
             {
                 "enabled": true,
-                "id": "gtk"
+                "id": "starship"
             },
             {
                 "enabled": true,
-                "id": "starship"
+                "id": "gtk"
             }
         ],
         "enableUserTheming": false
@@ -724,7 +724,7 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
+        "useWallhaven": false,
         "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",

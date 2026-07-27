@@ -18,7 +18,7 @@ output "eDP-1" {
     scale 1.0
 }
 layout {
-    gaps 6
+    gaps 12
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -42,9 +42,6 @@ layout {
         place-within-column
     }
     focus-ring {
-        off
-    }
-    border {
         width 6
 	active-gradient from="#f00b" to="#0f0b" angle=125 in="oklch longer hue"
 	inactive-gradient from="#0a06" to="#a006" angle=125 in="oklch longer hue"

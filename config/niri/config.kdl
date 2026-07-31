@@ -1,6 +1,4 @@
 // See https://yalter.github.io/niri/Configuration:-Introduction
-include "./animations.kdl"
-include "./noctalia.kdl"
 input {
     touchpad {
         tap
@@ -50,6 +48,7 @@ layout {
 }
 overview {
     backdrop-color "#26233a"
+    zoom 0.25
 }
 spawn-at-startup "qs" "-c" "noctalia-shell"
 screenshot-path "~/Images/Screenshots/%Y-%m-%d %H-%M-%S.png"
@@ -559,3 +558,5 @@ layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
 }
+include "./animations.kdl"
+include "./noctalia.kdl"

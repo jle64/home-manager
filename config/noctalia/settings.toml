@@ -16,10 +16,11 @@ end = [
     "battery",
     "session"
 ]
+margin_ends = 50
 start = [ "workspaces" ]
 
     [bar.default.dead_zone.actions]
-    middle = "window-switcher"
+    middle = "settings-toggle"
 
 [brightness]
 enable_ddcutil = true
@@ -121,8 +122,10 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
 enabled = [ "noctalia/screen_recorder", "noctalia/bitwarden" ]
 
 [shell]
+app_icon_color = "on_surface"
 button_borders = false
 card_borders = false
+font_family = "Noto Sans"
 input_borders = false
 launch_apps_as_systemd_services = true
 niri_overview_type_to_launch_enabled = true

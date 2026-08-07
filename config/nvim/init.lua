@@ -70,3 +70,6 @@ vim.cmd("colorscheme rosebones")
 vim.opt.laststatus = 2
 vim.g.airline_powerline_fonts = 1
 vim.g.airline_extensions_tabline_enabled = 1
+
+local ok, matugen = pcall(require, 'matugen')
+if ok then matugen.setup() end

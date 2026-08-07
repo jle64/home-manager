@@ -50,7 +50,7 @@ overview {
     backdrop-color "#26233a"
     zoom 0.25
 }
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "nixGL" "noctalia"
 screenshot-path "~/Images/Screenshots/%Y-%m-%d %H-%M-%S.png"
 prefer-no-csd
 debug {
@@ -85,16 +85,13 @@ binds {
         spawn "systemctl" "suspend" "-i"
     }
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"
+        spawn "noctalia" "msg" "session" "lock"
     }
     Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"
+        spawn "noctalia" "msg" "panel-toggle" "launcher"
     }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "toggle"
-    }
-    Mod+M hotkey-overlay-title="Task Manager" {
-        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle"
+        spawn "noctalia" "msg" "panel-toggle" "clipboard"
     }
     Mod+Return hotkey-overlay-title="Open a Terminal" {
         spawn "kitty"

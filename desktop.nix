@@ -5,7 +5,7 @@
   ...
 }: let
   simpleFiles = {
-    ".local/state/noctalia/settings.toml" = "noctalia/settings.toml";
+    ".config/noctalia/settings.toml" = "noctalia/settings.toml";
   };
 
   fileAttrs =

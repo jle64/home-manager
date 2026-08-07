@@ -5,10 +5,7 @@
   ...
 }: let
   simpleFiles = {
-    ".config/noctalia/colors.json" = "noctalia/colors.json";
-    ".config/noctalia/plugins.json" = "noctalia/plugins.json";
-    ".config/noctalia/settings.json" = "noctalia/settings.json";
-    ".config/noctalia/user-templates.toml" = "noctalia/user-templates.toml";
+    ".local/state/noctalia/settings.toml" = "noctalia/settings.toml";
   };
 
   fileAttrs =

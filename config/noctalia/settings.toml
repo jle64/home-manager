@@ -1,0 +1,215 @@
+config_version = 8
+
+[audio]
+enable_overdrive = true
+
+[bar.default]
+end = [
+    "privacy",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "session"
+]
+start = [ "workspaces" ]
+
+    [bar.default.dead_zone.actions]
+    middle = "window-switcher"
+
+[brightness]
+enable_ddcutil = true
+sync_all_monitors = true
+
+[control_center]
+sidebar = "full"
+sidebar_section = "full"
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "wallpaper"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 256.0
+    box_width = 288.0
+    cx = 960.0
+    cy = 540.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        fade_when_idle = false
+        visualization_mode = "bars"
+
+[dock]
+enabled = true
+launcher_custom_image_colorize = true
+launcher_icon = "pokeball"
+magnification = false
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[idle]
+pre_action_fade_seconds = 10
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[plugins]
+enabled = [ "noctalia/screen_recorder", "noctalia/bitwarden" ]
+
+[shell]
+button_borders = false
+card_borders = false
+input_borders = false
+launch_apps_as_systemd_services = true
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+polkit_agent = true
+popup_borders = false
+screen_time_enabled = true
+telemetry_enabled = true
+
+    [shell.animation]
+    speed = 1.4000000208616257
+
+    [shell.launcher]
+    app_grid = true
+    compact = true
+    fetch_exchange_rates = false
+
+        [shell.launcher.providers.emoji]
+        global = true
+
+        [shell.launcher.providers.session]
+        global = true
+
+        [shell.launcher.providers.wallpaper]
+        global = true
+
+        [shell.launcher.providers.windows]
+        global = true
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    launcher_placement = "attached"
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
+    polkit_placement = "attached"
+
+    [shell.screenshot]
+    confirm_region = true
+    remember_last_region = true
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Ayu Red"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "dysfunctional"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "starship" ]
+    community_ids = [ "opencode", "senpai", "neovim", "zed", "fastfetch", "zellij" ]
+
+[wallpaper]
+directory = "/var/home/jonathan/.local/share/backgrounds"
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
+
+    [wallpaper.last]
+    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
+
+[widget.battery]
+hide_when_full = true
+show_label = false
+
+[widget.brightness]
+show_label = false
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.network]
+show_label = false
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.privacy]
+hide_inactive = true
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+display = "none"

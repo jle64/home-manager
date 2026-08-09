@@ -40,7 +40,7 @@ layout {
         place-within-column
     }
     focus-ring {
-        width 6
+        width 3
 	active-gradient from="#f00b" to="#0f0b" angle=125 in="oklch longer hue"
 	inactive-gradient from="#0a06" to="#a006" angle=125 in="oklch longer hue"
         urgent-gradient from="#900f" to="#990f" angle=125 in="oklch longer hue"
@@ -516,11 +516,6 @@ window-rule {
     }
 }
 window-rule {
-    match app-id="Alacritty"
-    match app-id="com.mitchellh.ghostty"
-    match app-id="kitty"
-}
-window-rule {
     match app-id="^org\\.gnome\\."
     match app-id="zen"
     match app-id="Alacritty"
@@ -541,19 +536,11 @@ window-rule {
         inactive-color "#7d0d2d"
     }
 }
-window-rule {
-    match app-id="org.quickshell$"
-    open-floating true
-}
 layer-rule {
-    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+    match namespace="^noctalia-.*$"
     background-effect {
         xray false
     }
-}
-layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
 }
 include "./animations.kdl"
 include "./noctalia.kdl"

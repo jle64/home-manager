@@ -62,6 +62,7 @@ in {
       jq
       jujutsu
       just
+      k9s
       krew
       kubectl
       kubectx
@@ -83,6 +84,7 @@ in {
       rsync
       sassc
       senpai
+      sops
       shellcheck
       skim
       strace

@@ -40,7 +40,7 @@ layout {
         place-within-column
     }
     focus-ring {
-        width 3
+        width 6
 	active-gradient from="#f00b" to="#0f0b" angle=125 in="oklch longer hue"
 	inactive-gradient from="#0a06" to="#a006" angle=125 in="oklch longer hue"
         urgent-gradient from="#900f" to="#990f" angle=125 in="oklch longer hue"

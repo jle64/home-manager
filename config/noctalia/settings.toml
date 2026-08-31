@@ -48,29 +48,6 @@ sidebar_section = "full"
     [[control_center.shortcuts]]
     type = "wallpaper"
 
-[desktop_widgets]
-schema_version = 2
-widget_order = [ "desktop-widget-0000000000000001" ]
-
-    [desktop_widgets.grid]
-    cell_size = 16
-    major_interval = 4
-    visible = true
-
-    [desktop_widgets.widget.desktop-widget-0000000000000001]
-    box_height = 256.0
-    box_width = 288.0
-    cx = 960.0
-    cy = 540.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "fancy_audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
-        background = false
-        fade_when_idle = false
-        visualization_mode = "bars"
-
 [dock]
 enabled = true
 launcher_custom_image_colorize = true
@@ -213,6 +190,3 @@ hide_inactive = true
 
 [widget.volume]
 show_label = false
-
-[widget.workspaces]
-display = "none"

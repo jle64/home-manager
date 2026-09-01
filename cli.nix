@@ -93,7 +93,7 @@ in {
       trash-cli
       vimPlugins.vim-plug
       xh
-      yq
+      yq-go
       yt-dlp
       zellij
       zoxide

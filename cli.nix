@@ -26,6 +26,7 @@
   configDirs = [
     "bash"
     "nushell"
+    "zellij"
   ];
 
   dirAttrs =

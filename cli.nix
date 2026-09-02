@@ -84,9 +84,9 @@ in {
       rsync
       sassc
       senpai
-      sops
       shellcheck
       skim
+      sops
       strace
       testssl
       tig

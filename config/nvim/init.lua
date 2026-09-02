@@ -54,22 +54,14 @@ vim.cmd("filetype plugin on")
 vim.cmd([[
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/syntastic'
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'zenbones-theme/zenbones.nvim'
+Plug 'm00qek/baleia.nvim'
 Plug 'rktjmp/lush.nvim'
-Plug 'm00qek/baleia.nvim', { 'tag': 'v1.3.0' }
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 call plug#end()
 ]])
-vim.cmd("colorscheme rosebones")
 
 -- Airline configuration
 vim.opt.laststatus = 2
 vim.g.airline_powerline_fonts = 1
 vim.g.airline_extensions_tabline_enabled = 1
-
-local ok, matugen = pcall(require, 'matugen')
-if ok then matugen.setup() end

@@ -50,9 +50,8 @@ overview {
     backdrop-color "#26233a"
     zoom 0.25
 }
-spawn-at-startup "nixGL" "noctalia"
+spawn-at-startup "noctalia"
 screenshot-path "~/Images/Screenshots/%Y-%m-%d %H-%M-%S.png"
-prefer-no-csd
 debug {
     honor-xdg-activation-with-invalid-serial
 }

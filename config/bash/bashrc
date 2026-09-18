@@ -22,6 +22,3 @@ unset -v config
 
 # Load local stuff
 [ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local" || true
-
-# opencode
-export PATH=/home/jonathan/.opencode/bin:$PATH

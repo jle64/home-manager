@@ -25,7 +25,6 @@
       sc = "switch --create";
       last = "log -1 --stat";
       unstage = "reset HEAD --";
-
       lg = "log --reverse --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --all";
       lr = "log --reverse";
     };
@@ -85,7 +84,7 @@
     };
 
     credential = {
-      helper = "/usr/lib/git-core/git-credential-libsecret";
+      helper = "/home/jonathan/.nix-profile/libexec/git-core/git-credential-store";
     };
 
     commit = {

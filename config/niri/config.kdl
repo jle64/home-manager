@@ -16,7 +16,7 @@ output "eDP-1" {
     scale 1.0
 }
 layout {
-    gaps 12
+    gaps 0
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -42,6 +42,9 @@ layout {
         place-within-column
     }
     focus-ring {
+        width 0
+    }
+    border {
         width 6
 	active-gradient from="#f00b" to="#0f0b" angle=125 in="oklch longer hue"
 	inactive-gradient from="#0a06" to="#a006" angle=125 in="oklch longer hue"
@@ -508,10 +511,10 @@ blur {
     saturation 1.0
 }
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 0
     clip-to-geometry true
     open-floating false
-    opacity 0.95
+    opacity 1.0
     background-effect {
         blur true
         xray true

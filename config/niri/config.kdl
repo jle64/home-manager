@@ -42,13 +42,13 @@ layout {
         place-within-column
     }
     focus-ring {
-        width 0
+        off
     }
     border {
         width 6
-	active-gradient from="#f00b" to="#0f0b" angle=125 in="oklch longer hue"
-	inactive-gradient from="#0a06" to="#a006" angle=125 in="oklch longer hue"
-        urgent-gradient from="#900f" to="#990f" angle=125 in="oklch longer hue"
+	active-gradient from="#f00c" to="#0f0c" angle=125 in="oklch longer hue"
+	inactive-gradient from="#aafa" to="#afaa" angle=125 in="oklch longer hue"
+        urgent-gradient from="#f00f" to="#ff0f" angle=125 in="oklch longer hue"
     }
 }
 overview {
@@ -521,17 +521,9 @@ window-rule {
     }
 }
 window-rule {
-    match app-id="^org\\.gnome\\."
-    match app-id="zen"
-    match app-id="Alacritty"
-    match app-id="com.mitchellh.ghostty"
-    match app-id="kitty"
-    draw-border-with-background false
-}
-window-rule {
     match is-window-cast-target=true
 
-    focus-ring {
+    border {
         active-color "#f38ba8"
         inactive-color "#7d0d2d"
     }
@@ -539,12 +531,6 @@ window-rule {
     tab-indicator {
         active-color "#f38ba8"
         inactive-color "#7d0d2d"
-    }
-}
-layer-rule {
-    match namespace="^noctalia-.*$"
-    background-effect {
-        xray false
     }
 }
 include "./animations.kdl"

@@ -93,6 +93,9 @@
 
     gpg = {
       format = "ssh";
+      ssh = { 
+          allowedSignersFile = "~/.config/git/allowed_signers";
+      };
     };
 
     help = {

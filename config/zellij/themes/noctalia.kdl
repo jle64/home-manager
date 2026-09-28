@@ -1,15 +1,15 @@
 themes {
   noctalia {
-    fg "#f8dcda"
-    bg "#1e100f"
-    black "#5d3f3d"
+    fg "#e2e2e2"
+    bg "#131313"
+    black "#474747"
     red "#ffb4ab"
-    green "#fbacf8"
-    yellow "#eeb4e9"
-    blue "#ffb3af"
-    magenta "#fbacf8"
-    cyan "#eeb4e9"
-    white "#f8dcda"
+    green "#4cdadc"
+    yellow "#b0cccc"
+    blue "#b4c8e9"
+    magenta "#4cdadc"
+    cyan "#b0cccc"
+    white "#e2e2e2"
     orange "#ffdeab"
   }
 }

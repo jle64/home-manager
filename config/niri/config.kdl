@@ -514,7 +514,7 @@ window-rule {
     geometry-corner-radius 0
     clip-to-geometry true
     open-floating false
-    opacity 1.0
+    opacity 0.9
     background-effect {
         blur true
         xray true

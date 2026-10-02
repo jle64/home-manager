@@ -44,27 +44,3 @@ vim.keymap.set("n", "<Tab>", ":e#<CR>", { silent = true })
 
 -- Save with sudo shortcut
 vim.api.nvim_create_user_command("W", "w !sudo tee % > /dev/null", {})
-
--- Enable syntax highlighting
-vim.cmd("syntax on")
-vim.opt.termguicolors = true
-vim.cmd("filetype plugin on")
-
--- Plugin management with vim-plug
-vim.cmd([[
-call plug#begin(stdpath('data') . '/plugged')
-Plug 'bling/vim-airline'
-Plug 'm00qek/baleia.nvim'
-Plug 'rktjmp/lush.nvim'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
-call plug#end()
-]])
-
--- Airline configuration
-vim.opt.laststatus = 2
-vim.g.airline_powerline_fonts = 1
-vim.g.airline_extensions_tabline_enabled = 1
-
-local ok, matugen = pcall(require, 'matugen')
-if ok then matugen.setup() end

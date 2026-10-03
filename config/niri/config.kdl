@@ -511,13 +511,12 @@ blur {
     saturation 1.0
 }
 window-rule {
-    geometry-corner-radius 0
-    clip-to-geometry true
-    open-floating false
-    opacity 0.9
+    match app-id="kitty"
+    match is-floating=true
+    opacity 0.95
     background-effect {
         blur true
-        xray true
+        xray false
     }
 }
 window-rule {

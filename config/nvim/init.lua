@@ -44,3 +44,6 @@ vim.keymap.set("n", "<Tab>", ":e#<CR>", { silent = true })
 
 -- Save with sudo shortcut
 vim.api.nvim_create_user_command("W", "w !sudo tee % > /dev/null", {})
+
+local ok, matugen = pcall(require, 'matugen')
+if ok then matugen.setup() end

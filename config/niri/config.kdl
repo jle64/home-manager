@@ -34,11 +34,10 @@ layout {
     }
     tab-indicator {
         width 12
-        gap 12
-	gaps-between-tabs 12
-        length total-proportion=0.8
-	corner-radius 6
-        position "left"
+        gap 0
+	gaps-between-tabs 0
+        length total-proportion=1.0
+        position "top"
         place-within-column
     }
     focus-ring {
@@ -517,6 +516,13 @@ window-rule {
     background-effect {
         blur true
         xray false
+    }
+}
+window-rule {
+    match app-id=r#".*noctalia.*"#
+    background-effect {
+        blur true
+        xray true
     }
 }
 window-rule {

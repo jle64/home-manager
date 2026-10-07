@@ -156,19 +156,6 @@ wallpaper_scheme = "dysfunctional"
     builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "starship" ]
     community_ids = [ "opencode", "senpai", "neovim", "zed", "fastfetch", "zellij" ]
 
-[wallpaper]
-directory = "/var/home/jonathan/.local/share/backgrounds"
-transition_on_startup = true
-
-    [wallpaper.default]
-    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
-
-    [wallpaper.last]
-    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
-
-    [wallpaper.monitors.eDP-1]
-    path = "/var/home/jonathan/.local/share/backgrounds/wallhaven_6drlmx.jpg"
-
 [widget.battery]
 hide_when_full = true
 show_label = false

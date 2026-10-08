@@ -109,7 +109,10 @@
   };
   users.users.root.shell = pkgs.fish;
   programs.fish.enable = true;
-  security.sudo.wheelNeedsPassword = false;
+  security.sudo.enable = false;
+  security.run0.enable = true;
+  security.run0.sudo-shim.enable = true;
+  security.run0.wheelNeedsPassword = false;
   security.polkit.extraConfig = ''
   polkit.addRule(function(action, subject) {
     if (subject.isInGroup("wheel")) {

@@ -143,6 +143,7 @@
   # other packages
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
+    android-tools
     atop
     bat
     bazaar
@@ -160,6 +161,7 @@
     file-roller
     fish
     git
+    glib # for gdbus
     gnome-text-editor
     gnupg
     gpu-screen-recorder
@@ -187,7 +189,9 @@
     python314
     ripgrep
     rsync
+    scrcpy
     skim
+    sshfs
     strace
     sunshine
     sysstat

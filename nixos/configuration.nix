@@ -133,12 +133,16 @@
       default_session = {
         user = "greeter";
         command = "${pkgs.tuigreet}/bin/tuigreet --cmd ${config.programs.niri.package}/bin/niri-session";
-        #command = "${pkgs.greetd}/bin/agreety --cmd ${config.programs.niri.package}/bin/niri-session";
       };
     };
   };
   systemd.user.services.niri.enableDefaultPath = false;
   programs.niri.enable = true;
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 
   # other packages
   environment.systemPackages = with pkgs; [

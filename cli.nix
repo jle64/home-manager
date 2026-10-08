@@ -92,6 +92,7 @@ in {
       testssl
       tig
       trash-cli
+      uv
       vimPlugins.vim-plug
       xh
       yq-go

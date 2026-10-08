@@ -55,8 +55,13 @@ overview {
     zoom 0.25
 }
 spawn-at-startup "noctalia"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 screenshot-path "~/Images/Screenshots/%Y-%m-%d %H-%M-%S.png"
 prefer-no-csd
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+}
 debug {
     honor-xdg-activation-with-invalid-serial
 }

@@ -11,15 +11,8 @@
     ];
 
   # bootloader
-  boot.loader.grub = {
-    enable = true;
-    efiSupport = true;
-    efiInstallAsRemovable = false;
-    device = "nodev";
-    enableCryptodisk = false;
-  };
-  #boot.loader.systemd-boot.enable = true;
-  #boot.loader.systemd-boot.configurationLimit = 10;
+  boot.loader.limine.enable = true;
+  boot.loader.limine.maxGenerations = 10;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   
@@ -30,12 +23,15 @@
   # kernel
   boot.kernelParams = [
     "quiet"
+    "loglevel=3"
+    "systemd.show_status=false"
+    "rd.systemd.show_status=false"
   ];
 
   # network
   networking.hostName = "sephiroth";
   networking.networkmanager.enable = true;
-  networking.firewall.enable = true;
+  networking.firewall.enable = false;
   networking.firewall.allowPing = true;
   networking.firewall.allowedTCPPorts = [ 22 ];
   services.openssh.enable = true;
@@ -91,18 +87,17 @@
   };
 
   # graphics
-  nixpkgs.config.allowUnfree = true; #required for nvidia
   hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
+  nixpkgs.config.allowUnfree = true; #required for nvidia
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     open = true;
     nvidiaSettings = true;
   };
-  hardware.graphics.enable32Bit = true;
 
   # bluetooth
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
 
   # users and shells
   users.users.jonathan = {
@@ -136,7 +131,9 @@
     useTextGreeter = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd}/bin/agreety --cmd ${config.programs.niri.package}/bin/niri-session";
+        user = "greeter";
+        command = "${pkgs.tuigreet}/bin/tuigreet --cmd ${config.programs.niri.package}/bin/niri-session";
+        #command = "${pkgs.greetd}/bin/agreety --cmd ${config.programs.niri.package}/bin/niri-session";
       };
     };
   };
@@ -146,11 +143,13 @@
   # other packages
   environment.systemPackages = with pkgs; [
     atop
+    adwaita-icon-theme
     bat
     bazaar
     bpftrace
     brightnessctl
     btrfs-progs
+    cliphist
     curl
     ddcutil
     doggo
@@ -162,6 +161,7 @@
     fish
     git
     gnome-text-editor
+    gnupg
     greetd
     htop
     jq
@@ -179,6 +179,7 @@
     nixfmt
     noctalia
     oo7
+    python314
     pciutils
     playerctl
     progress
@@ -189,12 +190,14 @@
     strace
     sunshine
     sysstat
+    tuigreet
     usbutils
     warehouse
     waypipe
     wget
     wireguard-tools
     wireplumber
+    xwayland-satellite
     zoxide
   ];
 

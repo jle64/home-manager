@@ -21,6 +21,7 @@
   boot.initrd.systemd.emergencyAccess = true; # to login with sulogin
 
   # kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [
     "quiet"
     "loglevel=3"
@@ -109,6 +110,13 @@
   users.users.root.shell = pkgs.fish;
   programs.fish.enable = true;
   security.sudo.wheelNeedsPassword = false;
+  security.polkit.extraConfig = ''
+  polkit.addRule(function(action, subject) {
+    if (subject.isInGroup("wheel")) {
+      return polkit.Result.YES;
+    }
+  });
+  '';
 
   # desktop services
   services.flatpak.enable = true;
@@ -151,6 +159,7 @@
     atop
     bat
     bazaar
+    blueman
     bpftrace
     brightnessctl
     btrfs-progs
@@ -185,6 +194,7 @@
     niri
     nixfmt
     noctalia
+    networkmanagerapplet
     oo7
     pciutils
     playerctl

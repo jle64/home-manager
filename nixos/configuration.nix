@@ -142,8 +142,8 @@
 
   # other packages
   environment.systemPackages = with pkgs; [
-    atop
     adwaita-icon-theme
+    atop
     bat
     bazaar
     bpftrace
@@ -162,6 +162,7 @@
     git
     gnome-text-editor
     gnupg
+    gpu-screen-recorder
     greetd
     htop
     jq
@@ -179,11 +180,11 @@
     nixfmt
     noctalia
     oo7
-    python314
     pciutils
     playerctl
     progress
     pv
+    python314
     ripgrep
     rsync
     skim

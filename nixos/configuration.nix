@@ -13,6 +13,8 @@
   # bootloader
   boot.loader.limine.enable = true;
   boot.loader.limine.maxGenerations = 10;
+  boot.loader.limine.style.wallpapers = [];
+  boot.loader.limine.style.wallpaperStyle = "centered";
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   
@@ -22,12 +24,21 @@
 
   # kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # stfu
+  boot.initrd.verbose = false;
+  boot.consoleLogLevel = 0;
   boot.kernelParams = [
     "quiet"
     "loglevel=3"
+    "udev.log_level=3"
     "systemd.show_status=false"
     "rd.systemd.show_status=false"
   ];
+
+  # vt
+  services.kmscon.enable = true;
+  services.kmscon.config.hwaccel = true;
 
   # network
   networking.hostName = "sephiroth";
@@ -52,6 +63,9 @@
     nssmdns4 = true;
     openFirewall = true;
   };
+
+  # vpn
+  services.ivpn.enable = true;
 
   # time
   time.timeZone = "Europe/Paris";
@@ -109,6 +123,8 @@
   };
   users.users.root.shell = pkgs.fish;
   programs.fish.enable = true;
+
+  # sudo and the like
   security.sudo.enable = false;
   security.run0.enable = true;
   security.run0.sudo-shim.enable = true;
@@ -121,22 +137,7 @@
   });
   '';
 
-  # desktop services
-  services.flatpak.enable = true;
-  services.printing = {
-    enable = true;
-    browsing = true;
-    browsedConf = ''
-      BrowseDNSSDSubTypes _cups,_print
-    '';
-  };
-  services.udisks2.enable = true;
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-  };
+  # login
   services.greetd = {
     enable = true;
     useTextGreeter = true;
@@ -147,9 +148,33 @@
       };
     };
   };
+
+  # session
   systemd.user.services.niri.enableDefaultPath = false;
   programs.niri.enable = true;
+  programs.noctalia.enable = true;
+  programs.noctalia.recommendedServices.enable = true;
 
+  # desktop services
+  services.flatpak.enable = true;
+  services.printing = {
+    enable = true;
+    browsing = true;
+    browsedConf = ''
+      BrowseDNSSDSubTypes _cups,_print
+    '';
+  };
+  services.udisks2.enable = true;
+  services.oo7.enable = true;
+  security.pam.services.greetd.oo7.enable = true;
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+  };
+
+  # appimages need this
   programs.appimage = {
     enable = true;
     binfmt = true;
@@ -162,7 +187,6 @@
     atop
     bat
     bazaar
-    blueman
     bpftrace
     brightnessctl
     btrfs-progs
@@ -183,6 +207,8 @@
     gpu-screen-recorder
     greetd
     htop
+    ivpn
+    ivpn-ui
     jq
     kdePackages.kdeconnect-kde
     kitty
@@ -194,11 +220,7 @@
     ncdu
     neovim
     nh
-    niri
     nixfmt
-    noctalia
-    networkmanagerapplet
-    oo7
     pciutils
     playerctl
     progress

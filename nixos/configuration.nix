@@ -165,6 +165,7 @@
     greetd
     htop
     jq
+    kdePackages.kdeconnect-kde
     kitty
     lsof
     ltrace
